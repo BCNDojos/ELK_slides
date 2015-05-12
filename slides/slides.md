@@ -40,6 +40,7 @@ layout: false
 ]
 .right-column[
 - Syslog
+]
 ---
 # Introducción
 .left-column[
