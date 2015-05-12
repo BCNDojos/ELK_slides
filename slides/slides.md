@@ -39,7 +39,7 @@ layout: false
 ## Soluciones alternativas
 ]
 .right-column[
-- Syslog
+* Syslog
 ]
 ---
 # Introducción
@@ -47,8 +47,8 @@ layout: false
 ## Soluciones alternativas
 ]
 .right-column[
-- Syslog
-- Splunk
+* Syslog
+* Splunk
 ]
 ---
 ## Logstash
