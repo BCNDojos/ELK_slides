@@ -40,7 +40,7 @@ layout: false
 ]
 .right-column[
 
-- Syslog
+## Syslog
 ]
 ---
 # Introducción
@@ -49,7 +49,7 @@ layout: false
 ]
 .right-column[
 
-- Syslog
+## Syslog
 
   + Demonio presente en la mayoría de sistemas UN*X
 ]
@@ -60,9 +60,9 @@ layout: false
 ]
 .right-column[
 
-- Syslog
+## Syslog
 
-- Splunk
+## Splunk
 ]
 ---
 # Introducción
@@ -72,9 +72,9 @@ layout: false
 ]
 .right-column[
 
-- Visualizar
+## Visualizar
 
-- Centralizar
+## Centralizar
 ]
 ---
 ## Logstash
