@@ -40,7 +40,7 @@ layout: false
 ]
 .right-column[
 
-  - Syslog
+- Syslog
 ]
 ---
 # Introducción
@@ -49,9 +49,9 @@ layout: false
 ]
 .right-column[
 
-  - Syslog
+- Syslog
 
-    + Demonio presente en la mayoría de sistemas UN*X
+  + Demonio presente en la mayoría de sistemas UN*X
 ]
 ---
 # Introducción
@@ -60,9 +60,9 @@ layout: false
 ]
 .right-column[
 
-  - Syslog
+- Syslog
 
-  - Splunk
+- Splunk
 ]
 ---
 # Introducción
@@ -73,6 +73,7 @@ layout: false
 .right-column[
 
 - Visualizar
+
 - Centralizar
 ]
 ---
