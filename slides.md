@@ -1,6 +1,9 @@
-<!-- background: #fff -->
-<!-- color: #000 -->
-<!-- font: frutiger -->
+title: ELK
+description: PresentaciÃ³n sobre ELK.
+name: inverse
+layout: true
+class: center, top, inverse
+---
 
 ## Logstash
 
