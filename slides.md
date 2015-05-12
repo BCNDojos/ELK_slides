@@ -1,5 +1,5 @@
 title: ELK
-description: PresentaciÃ³n sobre ELK.
+description: Presentación sobre ELK.
 name: inverse
 layout: true
 class: center, top, inverse
