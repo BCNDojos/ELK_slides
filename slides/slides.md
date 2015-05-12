@@ -40,7 +40,13 @@ layout: false
 ]
 .right-column[
 - Syslog
---
+---
+# Introducción
+.left-column[
+## Soluciones alternativas
+]
+.right-column[
+- Syslog
 - Splunk
 ]
 ---
