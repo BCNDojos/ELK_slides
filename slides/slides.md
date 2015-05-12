@@ -82,16 +82,20 @@ layout: false
 ##¿Qué es Logstash?##
 
 Es una aplicación JRuby de tratamiento de logs que permite:
-
+]
+.right-column[
+--
 -Recolectar
+--
 -Centralizar
+--
 -Parsear/Modificar
+--
 -Enviar a un storage
-
+--
 Mediante el uso de plugins podemos trabajar con distintos sistemas de envio de logs, varios tipos de procesado y modificación de logs, varias soluciones de almacenamiento de datos, análisis y visualización.
 ]
---
-.right-column[
+---
 **- ¿ Cómo funciona?**
 Consta de un proceso corriendo en todos nuestros servidores que envia los logs a un Redis para centralizar toda la información, para el envio se pueden usar varias soluciones como RSyslog, Logstash Agent, Syslogd, Syslog-NG. Posteriormente un proceso de Logstash los recoje/modifica los logs como le hayamos dicho para mandarlos finalmente a Elasticsearch. 
 ]
