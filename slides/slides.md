@@ -4,6 +4,43 @@ name: inverse
 layout: true
 class: center, top, inverse
 ---
+background-image: url(http://upload.wikimedia.org/wikipedia/commons/c/c7/Logs.jpg)
+
+# ¿Qué haces tú con tus logs?
+--
+
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+## - Josep Pla ([@joseppla74](https://twitter.com/joseppla74)): Ingeniero de sistemas en Upptalk
+## - Ignasi Fosch ([@ifosch](https://twitter.com/ifosch)): Ingeniero de sistemas en Devex
+---
+layout: false
+# Introducción
+.left-column[
+## Soluciones alternativas
+]
+.right-column[
+- Hola
+]
 
 ## Logstash
 
