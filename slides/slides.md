@@ -41,7 +41,7 @@ layout: false
 .right-column[
 - Hola
 ]
-
+---
 ## Logstash
 
 **- ¿Qué es Logstash?**
