@@ -50,6 +50,7 @@ layout: false
 .right-column[
 
   - Syslog
+
     + Demonio presente en la mayoría de sistemas UN*X
 ]
 ---
