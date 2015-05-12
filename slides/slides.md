@@ -50,6 +50,16 @@ layout: false
 .right-column[
 
   - Syslog
+    + Demonio presente en la mayoría de sistemas UN*X
+]
+---
+# Introducción
+.left-column[
+## Soluciones alternativas
+]
+.right-column[
+
+  - Syslog
 
   - Splunk
 ]
