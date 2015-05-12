@@ -65,6 +65,17 @@ layout: false
   - Splunk
 ]
 ---
+# Introducción
+.left-column[
+## Soluciones alternativas
+## Motivaciones
+]
+.right-column[
+
+- Visualizar
+- Centralizar
+]
+---
 ## Logstash
 
 **- ¿Qué es Logstash?**
