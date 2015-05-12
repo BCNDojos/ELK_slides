@@ -39,6 +39,7 @@ layout: false
 ## Soluciones alternativas
 ]
 .right-column[
+
   - Syslog
 ]
 ---
@@ -47,7 +48,9 @@ layout: false
 ## Soluciones alternativas
 ]
 .right-column[
+
   - Syslog
+
   - Splunk
 ]
 ---
