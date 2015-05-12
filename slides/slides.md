@@ -76,10 +76,10 @@ layout: false
 - Centralizar
 ]
 ---
-## Logstash
+# Logstash
 
 .left-column[
-**¿Qué es Logstash?**
+##¿Qué es Logstash?##
 
 Es una aplicación JRuby de tratamiento de logs que permite:
 
