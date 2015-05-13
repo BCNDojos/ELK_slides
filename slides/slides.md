@@ -43,17 +43,17 @@ layout: false
 
 ## Syslog
 
-  ### Estándar de facto, definido en [RFC3164]()
-  ### Demonio presente en la mayoría de sistemas UN*X con diferentes implementaciones
-  ### Comunicación por protocolo UDP (puerto 514)
-  ### Desarrollado por [Eric Allman]() para [Sendmail]()
-  ### Permite dos tipos de categorizaciones:
-  - *Facility*: Hace referencia al tipo de aplicación que realiza el registro. Hay 24 tipos distintos.
-  - *Severity*: Hace referencia a la gravedad del evento registrado. Hay 8 tipos diferentes.
-  ### Limitaciones:
-  - Baja confiabilidad: El protocolo UDP permite la pérdida y no garantiza el orden.
-  - Falta de mecanismos de autenticación: No hay mecanismos de autenticación.
-  - Poca uniformidad: Los procesos, aplicaciones y sistemas pueden hacer variar el formato del mensaje.
+- Estándar de facto, definido en [RFC3164]()
+- Demonio presente en la mayoría de sistemas UN*X con diferentes implementaciones
+- Comunicación por protocolo UDP (puerto 514)
+- Desarrollado por [Eric Allman]() para [Sendmail]()
+- Permite dos tipos de categorizaciones:
+  + *Facility*: Hace referencia al tipo de aplicación que realiza el registro. Hay 24 tipos distintos.
+  + *Severity*: Hace referencia a la gravedad del evento registrado. Hay 8 tipos diferentes.
+- Limitaciones:
+  + Baja confiabilidad: El protocolo UDP permite la pérdida y no garantiza el orden.
+  + Falta de mecanismos de autenticación: No hay mecanismos de autenticación.
+  + Poca uniformidad: Los procesos, aplicaciones y sistemas pueden hacer variar el formato del mensaje.
 
 ## Splunk
 
