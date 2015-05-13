@@ -37,7 +37,6 @@ layout: false
 # Introducción
 .left-column[
 ## Soluciones alternativas
-## Motivaciones
 ]
 .right-column[
 
@@ -55,6 +54,16 @@ layout: false
   + Falta de mecanismos de autenticación: No hay mecanismos de autenticación.
   + Poca uniformidad: Los procesos, aplicaciones y sistemas pueden hacer variar el formato del mensaje.
 
+]
+---
+# Introducción
+.left-column[
+## Soluciones alternativas
+## Motivaciones
+]
+.right-column[
+
+## Syslog
 ## Splunk
 
 ]
