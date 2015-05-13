@@ -43,10 +43,10 @@ layout: false
 
 ## Syslog
 
-- Estándar de facto, definido en [RFC3164]()
+- Estándar de facto, definido en [RFC3164](https://www.ietf.org/rfc/rfc3164.txt)
 - Demonio presente en la mayoría de sistemas UN*X con diferentes implementaciones
 - Comunicación por protocolo UDP (puerto 514)
-- Desarrollado por [Eric Allman]() para [Sendmail]()
+- Desarrollado por [Eric Allman](http://en.wikipedia.org/wiki/Eric_Allman) para [Sendmail](http://en.wikipedia.org/wiki/Sendmail)
 - Permite dos tipos de categorizaciones:
   + *Facility*: Hace referencia al tipo de aplicación que realiza el registro. Hay 24 tipos distintos.
   + *Severity*: Hace referencia a la gravedad del evento registrado. Hay 8 tipos diferentes.
