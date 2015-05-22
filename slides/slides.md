@@ -157,10 +157,10 @@ layout: false
 ### Fluentd
 ## Flume
 
-- Otro **colector de logs**, pero distribuido.
-- Envía los logs a Hadoop.
+- Otro **colector de logs**, pero distribuido
+- Envía los logs a Hadoop
 - Observaciones:
-  + **Poco conocido**: Aún menos conocido que Fluentd, posiblemente más reconocido en entornos con Hadoop.
+  + **Poco conocido**: Aún menos conocido que Fluentd, posiblemente más reconocido en entornos con Hadoop
 
 ]
 ---
@@ -176,10 +176,30 @@ layout: false
 ### Flume
 ## Splunk
 
-- Plataforma similar a ELK, pero bastante anterior.
-- Sólo tiene licencia comercial.
+- Plataforma similar a ELK, pero bastante anterior
+- Sólo tiene licencia comercial
 - Observaciones:
-  + **Conocimiento**: Aunque es bastante conocido, no parece que haya muchos usuarios.
+  + **Conocimiento**: Aunque es bastante conocido, no parece que haya muchos usuarios
+
+]
+---
+# Introducción
+.left-column[
+### Motivaciones
+## Otras Soluciones
+]
+.right-column[
+
+### Syslog
+### Fluentd
+### Flume
+### Splunk
+## SaaS (Loggly, Papertrail, Logentries, Sentry)
+
+- Servicios online
+- Tráfico máximo y rentención limitados y relativos al precio
+- Información sensible en sistemas externos
+- Algunos casos requieren tener agentes o enviar desde la aplicación directamente
 
 ]
 ---
@@ -259,8 +279,9 @@ layout: false
 ## Otros componentes
 
 - Logstash-forwarder
+- Beaver
+- Woodchuck
 - Redis
-
 
 ]
 ---
