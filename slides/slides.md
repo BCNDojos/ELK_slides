@@ -36,7 +36,65 @@ background-image: url(http://upload.wikimedia.org/wikipedia/commons/c/c7/Logs.jp
 layout: false
 # Introducción
 .left-column[
-## Soluciones alternativas
+## Motivaciones
+]
+.right-column[
+
+## Recolectar registros
+
+- Desde distintos orígenes: ficheros, flujos, sistema, ...
+- Pretratamiento
+- Clasificación inicial
+- Encaminamiento a distintos destinos
+
+]
+---
+# Introducción
+.left-column[
+## Motivaciones
+]
+.right-column[
+
+### Recolectar registros
+## Tratamiento de los datos
+
+- 
+
+]
+---
+# Introducción
+.left-column[
+## Motivaciones
+]
+.right-column[
+
+### Recolectar registros
+### Tratamiento de los datos
+## Análisis
+
+- 
+
+]
+---
+# Introducción
+.left-column[
+## Motivaciones
+]
+.right-column[
+
+### Recolectar registros
+### Tratamiento de los datos
+### Análisis
+## Visualización
+
+- 
+
+]
+---
+# Introducción
+.left-column[
+### Motivaciones
+## Otras Soluciones
 ]
 .right-column[
 
@@ -49,22 +107,80 @@ layout: false
 - Permite dos tipos de categorizaciones:
   + **Facility**: Indica el tipo de aplicación que hace el registro. Hay 24 tipos distintos.
   + **Severity**: Se refiere a la gravedad del evento registrado. Hay 8 tipos diferentes.
-- Limitaciones:
+- Observaciones:
   + **Baja confiabilidad**: El protocolo UDP permite pérdida y no garantiza el orden de los mensajes.
   + **Falta de mecanismos de autenticación**: No hay mecanismos de autenticación en ningún sentido.
   + **Poca uniformidad**: Los procesos, aplicaciones y sistemas pueden hacer variar el formato del mensaje.
+  + **Falta de herramientas**: No incluye herramientas de análisis ni tratamiento.
 
 ]
 ---
 # Introducción
 .left-column[
-## Soluciones alternativas
-## Motivaciones
+### Motivaciones
+## Otras Soluciones
 ]
 .right-column[
 
-## Syslog
+### Syslog
+## Fluentd
+
+- **Colector de logs**
+- Permite distintos orígenes y destinos
+- Incluye la posibilidad de filtrar, regular y dirigir mensajes
+- Internamente, convierte los mensajes en documentos JSON
+- Tiene posibilidad de conectar plugins
+- Hecho en C y Ruby
+- Observaciones:
+  + **Poco conocido**: Aunque es relativamente conocido en la comunidad Ruby, no lo es mucho fuera de ella.
+  + **Sustituto de Logstask**: Existe algo de información sobre cómo pasar de ELK a EFK.
+
+]
+---
+# Introducción
+.left-column[
+### Motivaciones
+## Otras Soluciones
+]
+.right-column[
+
+### Syslog
+### Fluentd
+## Flume
+
+- Otro **colector de logs**, pero distribuido.
+- Envía los logs a Hadoop.
+- Observaciones:
+  + **Poco conocido**: Aún menos conocido que Fluentd, posiblemente más reconocido en entornos con Hadoop.
+
+]
+---
+# Introducción
+.left-column[
+### Motivaciones
+## Otras Soluciones
+]
+.right-column[
+
+### Syslog
+### Fluentd
+### Flume
 ## Splunk
+
+- Plataforma similar a ELK, pero bastante anterior.
+- Sólo tiene licencia comercial.
+- Observaciones:
+  + **Conocimiento**: Aunque es bastante conocido, no parece que haya muchos usuarios.
+
+]
+---
+# Introducción
+.left-column[
+### Motivaciones
+### Otras Soluciones
+## Descripción
+]
+.right-column[
 
 ]
 ---
