@@ -311,3 +311,94 @@ Consta de un proceso corriendo en todos nuestros servidores que envia los logs a
 ---
 **- ¿Qué hace?**
 Recoge todos los logs de una serie de entradas para filtrarlos, modificarlos, añadirles tags, hacer match de expresiones regulares/filtros GROK, limpiar logs, crear checksums para deduplicación de eventos, extraer pares de clave/valor, realizar descubrimento Geoip y DNS, monitorizar rangos de datos en campos para alertas, separar en distintos eventos de un mensaje y anonimizar datos. Todos estos filtros pueden usarse aplicando unas reglas de lógica que nos permiten un sinfín de posibilidades como anonimizar unos logs para su uso en el entorno de test mientras se les aplica con otro filtro una modificación de los campos y añadido de tags para que la linea tenga los datos separados y las etiquetas que habremos definido nosotros para posteriormente crear un Dashboard en Kibana donde se muestra que los nuevos usuarios IOS han sido un 20% mas altos en Enero que en Diciembre y que el ratio de errores en estos ha bajado un 3%, todo esto acompañado de mapa que nos muestra que tanto por ciento corresponde a cada pais usando la localización por GeoIP.
+---
+# ElasticSearch
+.left-column[
+## Motor de indexación
+]
+.right-column[
+
+- 
+
+]
+---
+# ElasticSearch
+.left-column[
+### Motor de indexación
+## Motor de búsqueda
+]
+.right-column[
+
+- 
+
+]
+---
+# ElasticSearch
+.left-column[
+### Motor de indexación
+### Motor de búsqueda
+## Orientado a documento
+]
+.right-column[
+
+- 
+
+]
+---
+# ElasticSearch
+.left-column[
+### Motor de indexación
+### Motor de búsqueda
+### Orientado a documento
+## Sin esquema
+]
+.right-column[
+
+- 
+
+]
+---
+# ElasticSearch
+.left-column[
+### Motor de indexación
+### Motor de búsqueda
+### Orientado a documento
+### Sin esquema
+## API REST basada en JSON
+]
+.right-column[
+
+- 
+
+]
+---
+# ElasticSearch
+.left-column[
+### Motor de indexación
+### Motor de búsqueda
+### Orientado a documento
+### Sin esquema
+### API REST basada en JSON
+## Funcionalidades analíticas
+]
+.right-column[
+
+- 
+
+]
+---
+# ElasticSearch
+.left-column[
+### Motor de indexación
+### Motor de búsqueda
+### Orientado a documento
+### Sin esquema
+### API REST basada en JSON
+### Funcionalidades analíticas
+## Disponibilidad
+]
+.right-column[
+
+- 
+
+]
