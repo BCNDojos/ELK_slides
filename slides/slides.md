@@ -198,6 +198,7 @@ layout: false
 - API REST basada en JSON
 - Funcionalidades analíticas
 - Sin esquema
+- Uso de plugins para ampliar funcionalidades
 - Disponibilidad
 
 ]
@@ -219,6 +220,7 @@ layout: false
 - Transporte hasta uno o más destinos finales
 - Capacidad de encaminamiento
 - Escrito en JRuby
+- Entradas, salidas, codecs y filtros ampliables mediante plugins
 
 ]
 ---
@@ -239,6 +241,7 @@ layout: false
 - Escrito en NodeJS
 - Democratización del acceso a los datos
 - Permite generar histogramas, análisis de términos, mapas, tablas,...
+- Muy simple y bastante eficiente
 
 ]
 ---
@@ -255,7 +258,9 @@ layout: false
 ### Kibana
 ## Otros componentes
 
-- Lumberjack
+- Logstash-forwarder
+- Redis
+
 
 ]
 ---
