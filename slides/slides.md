@@ -58,7 +58,11 @@ layout: false
 ### Recolectar registros
 ## Tratamiento de los datos
 
-- 
+- Extracción de datos
+- Transformación de tipos
+- Etiquetado de los registros
+- Creación de nuevos datos según otros presentes
+- Uso de expresiones regulares para el *parsing*
 
 ]
 ---
@@ -72,7 +76,10 @@ layout: false
 ### Tratamiento de los datos
 ## Análisis
 
-- 
+- Indexación para búsquedas
+- Agregación
+- Clasificación
+- Correlación
 
 ]
 ---
@@ -87,7 +94,10 @@ layout: false
 ### Análisis
 ## Visualización
 
-- 
+- Búsqueda
+- Selección
+- Vista en directo
+- Graficación
 
 ]
 ---
@@ -109,9 +119,8 @@ layout: false
   + **Severity**: Se refiere a la gravedad del evento registrado. Hay 8 tipos diferentes.
 - Observaciones:
   + **Baja confiabilidad**: El protocolo UDP permite pérdida y no garantiza el orden de los mensajes.
-  + **Falta de mecanismos de autenticación**: No hay mecanismos de autenticación en ningún sentido.
-  + **Poca uniformidad**: Los procesos, aplicaciones y sistemas pueden hacer variar el formato del mensaje.
   + **Falta de herramientas**: No incluye herramientas de análisis ni tratamiento.
+  + **Falta de mecanismos de autenticación**: No hay mecanismos de autenticación en ningún sentido.
 
 ]
 ---
@@ -181,6 +190,72 @@ layout: false
 ## Descripción
 ]
 .right-column[
+
+## Elasticsearch
+
+- Motor de indexación y búsqueda orientado a documento
+- Escrito en Java
+- API REST basada en JSON
+- Funcionalidades analíticas
+- Sin esquema
+- Disponibilidad
+
+]
+---
+# Introducción
+.left-column[
+### Motivaciones
+### Otras Soluciones
+## Descripción
+]
+.right-column[
+
+### Elasticsearch
+## Logstash
+
+- Recocopila registros de los eventos que se quieren registrar
+- Múltiple fuentes de tipos distintos
+- Preprocesado y normalización
+- Transporte hasta uno o más destinos finales
+- Capacidad de encaminamiento
+- Escrito en JRuby
+
+]
+---
+# Introducción
+.left-column[
+### Motivaciones
+### Otras Soluciones
+## Descripción
+]
+.right-column[
+
+### Elasticsearch
+### Logstash
+## Kibana
+
+- Panel de control para búsquedas y análisis sobre ElasticSearch
+- Muy sencillo
+- Escrito en NodeJS
+- Democratización del acceso a los datos
+- Permite generar histogramas, análisis de términos, mapas, tablas,...
+
+]
+---
+# Introducción
+.left-column[
+### Motivaciones
+### Otras Soluciones
+## Descripción
+]
+.right-column[
+
+### Elasticsearch
+### Logstash
+### Kibana
+## Otros componentes
+
+- Lumberjack
 
 ]
 ---
