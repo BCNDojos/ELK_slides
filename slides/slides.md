@@ -288,7 +288,7 @@ layout: false
 # Logstash
 
 .left-column[
-##¿Qué es Logstash?
+##¿Qué es?
 ]
 .right-column[
 ###Es una aplicación JRuby de tratamiento de logs que permite:
@@ -302,7 +302,7 @@ layout: false
 # Logstash
 
 .left-column[
-##¿Qué es Logstash?
+##¿Qué es?
 ]
 .right-column[
 ###Es una aplicación JRuby de tratamiento de logs que permite:
@@ -418,10 +418,11 @@ layout: false
 ##¿Como Funciona?
 ]
 .right-column[
-#### Componentes del sistema Logstash
+### Componentes del sistema Logstash
 
   - Shipper, Broker, Logstash Central
 
-#### Recolección
-  -
+### Recolección
+
+  - Es la fase donde el agente recoje, taggea y reenvia la salida al broker, logstash central o directamente a la salida.
 ]
