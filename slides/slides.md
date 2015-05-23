@@ -747,6 +747,7 @@ background-image: url()
 ]
 ---
 background-image: url(https://www.paylease.com/corp/wp-content/uploads/2014/08/man-drawing-charts-and-graphs-e1416365886485.jpg)
+background-size: contain;
 ---
 # Kibana
 
