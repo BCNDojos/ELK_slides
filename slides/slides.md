@@ -30,8 +30,8 @@ background-image: url(http://upload.wikimedia.org/wikipedia/commons/c/c7/Logs.jp
 <br/>
 <br/>
 <br/>
-## - Josep Pla ([@joseppla74](https://twitter.com/joseppla74)): Ingeniero de sistemas en Upptalk
-## - Ignasi Fosch ([@ifosch](https://twitter.com/ifosch)): Ingeniero de sistemas en Devex
+## - Josep Pla ([@joseppla74](https://twitter.com/joseppla74)): Ingeniero de sistemas en [Upptalk](http://upptalk.com/)
+## - Ignasi Fosch ([@ifosch](https://twitter.com/ifosch)): Ingeniero de sistemas en [Devex](https://www.devex.com/)
 ---
 layout: false
 # Introducción
@@ -294,7 +294,7 @@ layout: false
 
 - #### Recolectar
 - #### Centralizar
-- #### Parsear/Modificar
+- #### Extraer/Modificar campos
 - #### Enviar a una salida
 ]
 ---
@@ -305,11 +305,11 @@ layout: false
 ]
 .right-column[
 ### Es una aplicación JRuby de tratamiento de logs que permite:
-  - #### Recolectar, centralizar, parsear/modificar, enviar a una salida.
+  - #### Recolectar, centralizar, extraer/modificar, enviar a una salida.
 
 ### Mediante el uso de plugins podemos trabajar con:
 
-- #### Distintos sistemas de envio de logs 
+- #### Distintos sistemas de envío de logs 
 	- Syslogd
 	- RSyslog 
 	- RSyslog-NG
@@ -328,19 +328,19 @@ layout: false
 ]
 .right-column[
 ### Es una aplicación JRuby de tratamiento de logs que permite:
-  - #### Recolectar, centralizar, parsear/modificar, enviar a una salida.
+  - #### Recolectar, centralizar, extraer/modificar, enviar a una salida.
 
 ### Mediante el uso de plugins podemos trabajar con:
 
-- #### Distintos sistemas de envio de logs 
+- #### Distintos sistemas de envío de logs 
 
-- #### Varios tipos de procesado y modificacion de logs
-	- Parseado
+- #### Varios tipos de procesado y modificación de logs
+	- Extracción
 	- Mutación
 	- Limpieza
 	- Añadido de campos
-	- Geolocalización
-	- Deduplicación de eventos
+	- Localización geográfica
+	- Eliminación de eventos duplicados
 	- ...
 ]
 ---
@@ -351,20 +351,20 @@ layout: false
 ]
 .right-column[
 ### Es una aplicación JRuby de tratamiento de logs que permite:
-  - #### Recolectar, centralizar, parsear/modificar, enviar a una salida.
+  - #### Recolectar, centralizar, extraer/modificar, enviar a una salida.
 
 ### Mediante el uso de plugins podemos trabajar con:
 
-- #### Distintos sistemas de envio de logs 
+- #### Distintos sistemas de envío de logs 
 
-- #### Varios tipos de procesado y modificacion de logs
+- #### Varios tipos de procesado y modificación de logs
 
 - #### Varias soluciones de almacenamiento/salida de datos
-	- Almacenamiendo en Elasticsearch
-	- Envio de mails según lógica y filtros preestablecidos
-	- Envio de mensajes a través xmpp
-	- Envio de alertas a Nagios
-	- Creación de metricas usando StatsD
+	- Almacenamiento en Elasticsearch
+	- Envío de correos según lógica y filtros preestablecidos
+	- Envío de mensajes a través XMPP
+	- Envío de alertas a Nagios
+	- Creación de métricas usando StatsD
 ]
 ---
 # Logstash
@@ -376,7 +376,7 @@ layout: false
 .right-column[
 ### Arquitectura del sistema Logstash
 - #### Shipper
-	- Es el servicio que corre en cada maquina y se encarga de recoger los logs deseados, taggearlos y enviarlos a un "broker" o al servicio central de Logstash
+	- Es el servicio que corre en cada maquina y se encarga de recoger los logs deseados, etiquetarlos y enviarlos a un "broker" o al servicio central de Logstash
 ]
 ---
 # Logstash
@@ -388,9 +388,9 @@ layout: false
 .right-column[
 ### Arquitectura del sistema Logstash
 - #### Shipper
-	- Es el servicio que corre en cada maquina y se encarga de recoger los logs deseados, taggearlos y enviarlos a un "broker" o al servicio central de Logstash
+	- Es el servicio que corre en cada maquina y se encarga de recoger los logs deseados, etiquetarlos y enviarlos a un "broker" o al servicio central de Logstash
 - #### Broker
-	- Si lo tenemos, es el encargado de recoger todos los logs que envian los shippers para que posteriormente el Logstash central los coja para procesarlos
+	- Si lo tenemos, es el encargado de recoger todos los logs que envían los shippers para que posteriormente el Logstash central los coja para procesarlos
 ]
 ---
 # Logstash
@@ -403,11 +403,11 @@ layout: false
 ### Arquitectura del sistema Logstash
 
 - #### Shipper
-	- Es el servicio que corre en cada maquina y se encarga de recoger los logs deseados, taggearlos y enviarlos a un "broker" o al servicio central de Logstash
+	- Es el servicio que corre en cada maquina y se encarga de recoger los logs deseados, etiquetarlos y enviarlos a un "broker" o al servicio central de Logstash
 - #### Broker
-	- Si lo tenemos, es el encargado de recoger todos los logs que envian los shippers para que posteriormente el Logstash central los coja para procesarlos
+	- Si lo tenemos, es el encargado de recoger todos los logs que envían los shippers para que posteriormente el Logstash central los coja para procesarlos
 - #### Logstash Central
-	- Es el encargado de recoger todos los logs del broker o los agentes de logstash y aplicarles una logica definida por el usuario para modificarlos, parsearlos y enviar el resultado a una serie de salidas (Elasticsearch, Nagios, Mail, etc...)
+	- Es el encargado de recoger todos los logs del broker o los agentes de logstash y aplicarles una lógica definida por el usuario para modificarlos, extraerlos y enviar el resultado a una serie de salidas (Elasticsearch, Nagios, Mail, etc...)
 ]
 ---
 # Logstash
@@ -420,11 +420,11 @@ layout: false
 ### Arquitectura del sistema Logstash
 
 - #### Shipper
-	- Es el servicio que corre en cada maquina y se encarga de recoger los logs deseados, taggearlos y enviarlos a un "broker" o al servicio central de Logstash
+	- Es el servicio que corre en cada maquina y se encarga de recoger los logs deseados, etiquetarlos y enviarlos a un "broker" o al servicio central de Logstash
 - #### Broker
-	- Si lo tenemos, es el encargado de recoger todos los logs que envian los shippers para que posteriormente el Logstash central los coja para procesarlos
+	- Si lo tenemos, es el encargado de recoger todos los logs que envían los shippers para que posteriormente el Logstash central los coja para procesarlos
 - #### Logstash Central
-	- Es el encargado de recoger todos los logs del broker o los agentes de logstash y aplicarles una logica definida por el usuario para modificarlos, parsearlos y enviar el resultado a una serie de salidas (Elasticsearch, Nagios, Mail, etc...)
+	- Es el encargado de recoger todos los logs del broker o los agentes de logstash y aplicarles una lógica definida por el usuario para modificarlos, extraerlos y enviar el resultado a una serie de salidas (Elasticsearch, Nagios, Mail, etc...)
 
 Algunos de estos componentes pueden estar en la misma maquina, pueden ser un mismo proceso realizando varios de los roles e incluso alguno puede no existir en nuestra instalación.
 ]
@@ -442,7 +442,7 @@ Algunos de estos componentes pueden estar en la misma maquina, pueden ser un mis
 
 ### Recolección
 
-  Es la fase donde el agente recoge, etiqueta y reenvia los logs
+  Es la fase donde el agente recoge, etiqueta y reenvía los logs
 
   - Se definen una serie de entradas (inputs) en el fichero de configuración
 
@@ -464,7 +464,7 @@ Algunos de estos componentes pueden estar en la misma maquina, pueden ser un mis
 
 ### Tratamiento
 
-  Es la fase en que parseamos, modificamos, añadimos datos
+  Es la fase en que extraemos, modificamos, añadimos datos
 
   - Se aplican una serie de filtros según una lógica que definimos en el fichero de configuración que nos permiten realizar todas las modificaciones citadas anteriormente
 ]
@@ -484,13 +484,13 @@ Algunos de estos componentes pueden estar en la misma maquina, pueden ser un mis
 
 ### Tratamiento
 
-### Envio  
+### Envío
 
   Es la fase en que enviamos los datos procesados
  
  - Se definen una serie de salidas (outputs) en el fichero de configuración
 
- - Podemos definir una lógica que aplique filtros de salida para que según el tipo de datos o etiquetas que hayamos añadido estos se envien a distintos destinos y en distintos formatos
+ - Podemos definir una lógica que aplique filtros de salida para que según el tipo de datos o etiquetas que hayamos añadido estos se envíen a distintos destinos y en distintos formatos
 ]
 ---
 # ElasticSearch
@@ -748,7 +748,7 @@ Algunos de estos componentes pueden estar en la misma maquina, pueden ser un mis
 ]
 .right-column[
 
-### Una aplicación NodeJS (v4) para visualización, creacion y gestión de las consultas que se lanzan contra Elasticsearch.
+### Una aplicación NodeJS (v4) para visualización, creación y gestión de las consultas que se lanzan contra Elasticsearch.
 ]
 ---
 # Kibana
@@ -766,7 +766,7 @@ Algunos de estos componentes pueden estar en la misma maquina, pueden ser un mis
 
   - #### Generar representaciones gráficas de dichos datos (lineas, columnas, pastel, mapa, métrica, etc...)
 
-  - #### Generar cuadros de mando agrupando graficos y visualizaciones
+  - #### Generar cuadros de mando agrupando gráficos y visualizaciones
 
   - #### Exportación de datos en formato CSV
 ]
@@ -883,7 +883,7 @@ Algunos de estos componentes pueden estar en la misma maquina, pueden ser un mis
 - Lee de varios ficheros: syslog, errores, acceso, aplicación, ...
 - Realiza el etiquetado de tipo de log en el agente del servidor y lo manda a Redis
 - Cada agente envía a un Redis central donde también esta el Logstash y Elasticsearch (1 nodo)
-- El proceso de tratamiento de logs se realiza en el servidor central recogiendo los datos desde el Redis y enviandolos a Elasticsearch una vez procesados por el Logstash central.
+- El proceso de tratamiento de logs se realiza en el servidor central recogiendo los datos desde el Redis y enviándolos a Elasticsearch una vez procesados por el Logstash central.
 ]
 ---
 # Instalación en [Upptalk](http://upptalk.com)
@@ -976,7 +976,7 @@ Algunos de estos componentes pueden estar en la misma maquina, pueden ser un mis
 
 ### Control de los agentes de monitorización en producción
 
-## Control del enrutado de llamadas por país y proveedor
+## Control del encaminado de llamadas por país y proveedor
 ]
 ---
 # Instalación en [Upptalk](http://upptalk.com)
@@ -995,7 +995,7 @@ Algunos de estos componentes pueden estar en la misma maquina, pueden ser un mis
 
 ### Control de los agentes de monitorización en producción
 
-### Control del enrutado de llamadas por país y proveedor
+### Control del encaminado de llamadas por país y proveedor
 
 ## Control de los errores de verificación del usuario por teléfono/correo
 ]
@@ -1016,9 +1016,9 @@ Algunos de estos componentes pueden estar en la misma maquina, pueden ser un mis
 
 ### Control de los agentes de monitorización en producción
 
-### Control del enrutado de llamadas por país y proveedor
+### Control del encaminado de llamadas por país y proveedor
 
 ### Control de los errores de verificación del usuario por teléfono/correo
 
 ## Control de las recompensas por visualización de anuncios
-]
+
