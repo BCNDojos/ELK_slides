@@ -303,7 +303,14 @@ Recoge todos los logs de una serie de entradas para filtrarlos, modificarlos, a�
 ]
 .right-column[
 
-- 
+- Sistema que recibe datos y los ordena
+- Basado en Apache Lucene
+- Los datos se almacenan en índices
+- Cada índice tiene :
+  + una configuración
+  + una definición
+  + un conjunto de plantillas
+- Los campos se pueden analizar de muchas formas
 
 ]
 ---
@@ -314,7 +321,13 @@ Recoge todos los logs de una serie de entradas para filtrarlos, modificarlos, a�
 ]
 .right-column[
 
-- 
+- Los datos están organizados en documentos
+- Formato JSON
+- La carga de documentos es bastante eficiente
+- Se pueden cargar documentos en masa
+- Mantiene la copia original
+- Mantiene la cuenta de la versión de cada documento
+- Permite anidamiento de documentos
 
 ]
 ---
@@ -322,22 +335,30 @@ Recoge todos los logs de una serie de entradas para filtrarlos, modificarlos, a�
 .left-column[
 ### Motor de indexación
 ### Orientado a documento
-## Sin esquema
+## Esquema dinámico
 ]
 .right-column[
 
-- 
+- Los campos del documento no se definen previamente
+- La estructura de los documentos puede cambiar
+- Si un documento no contiene un campo solicitado, se muestra como no existente
+- Es opcional, se pueden definir algunos o todos los campos de los documentos
 
 ]
 ---
 # ElasticSearch
 .left-column[
 ### Motor de indexación
+### Orientado a documento
+### Esquema dinámico
 ## Motor de búsqueda
 ]
 .right-column[
 
-- 
+- Permite realizar búsquedas sobre los datos indexados
+- Permite definir filtros sobre las búsquedas para restringirlas
+- Parametrización sobre los datos, sus estadísticas, ...
+- Permite obtener facetas de las búsquedas
 
 ]
 ---
@@ -345,13 +366,14 @@ Recoge todos los logs de una serie de entradas para filtrarlos, modificarlos, a�
 .left-column[
 ### Motor de indexación
 ### Orientado a documento
-### Sin esquema
+### Esquema dinámico
 ### Motor de búsqueda
 ## API REST basada en JSON
 ]
 .right-column[
 
-- 
+- La comunicación se realiza mediante una API REST
+- Los mensajes, tanto de petición como de respuesta, son JSON
 
 ]
 ---
@@ -359,14 +381,18 @@ Recoge todos los logs de una serie de entradas para filtrarlos, modificarlos, a�
 .left-column[
 ### Motor de indexación
 ### Orientado a documento
-### Sin esquema
+### Esquema dinámico
 ### Motor de búsqueda
 ### API REST basada en JSON
 ## Funcionalidades analíticas
 ]
 .right-column[
 
-- 
+- Análisis de términos
+- Rangos numéricos, de fecha, de IP
+- Cálculo de distancias geográficas
+- Generación de histogramas
+- Estadísticas: Media, máximo, mínimo, suma, percentiles,...
 
 ]
 ---
@@ -374,7 +400,7 @@ Recoge todos los logs de una serie de entradas para filtrarlos, modificarlos, a�
 .left-column[
 ### Motor de indexación
 ### Orientado a documento
-### Sin esquema
+### Esquema dinámico
 ### Motor de búsqueda
 ### API REST basada en JSON
 ### Funcionalidades analíticas
@@ -382,6 +408,9 @@ Recoge todos los logs de una serie de entradas para filtrarlos, modificarlos, a�
 ]
 .right-column[
 
-- 
+- Distribuido entre varios nodos
+- Permite descubrimiento de nodos
+- Realiza *sharding* entre los nodos de forma automática
+- Distribuye la carga de las consultas entre los nodos presentes
 
 ]
