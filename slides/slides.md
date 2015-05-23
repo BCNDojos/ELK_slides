@@ -957,23 +957,6 @@ Algunos de estos componentes pueden estar en la misma maquina, pueden ser un mis
 
 ### Control de altas de usuario por tipo de dispositivo móvil y país
 
-## Control de los agentes de monitorización en producción
-]
----
-# Instalación en [Upptalk](http://upptalk.com)
-
-.left-column[
-### Detalles
-### Arquitectura
-## Casos de uso
-]
-.right-column[
-### Visualización de eventos en tiempo (casi) real
-
-### Control de compras e intento de fraude
-
-### Control de altas de usuario por tipo de dispositivo móvil y país
-
 ### Control de los agentes de monitorización en producción
 
 ## Control del encaminado de llamadas por país y proveedor
@@ -1021,4 +1004,4 @@ Algunos de estos componentes pueden estar en la misma maquina, pueden ser un mis
 ### Control de los errores de verificación del usuario por teléfono/correo
 
 ## Control de las recompensas por visualización de anuncios
-
+]
