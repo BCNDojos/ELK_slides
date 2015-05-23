@@ -371,8 +371,8 @@ layout: false
 # Logstash
 
 .left-column[
-###¿Qué es Logstash?
-##¿Como Funciona?
+###¿Qué es?
+##¿Cómo Funciona?
 ]
 .right-column[
 ### Arquitectura del sistema Logstash
@@ -397,8 +397,8 @@ layout: false
 # Logstash
 
 .left-column[
-###¿Qué es Logstash?
-##¿Como Funciona?
+###¿Qué es?
+##¿Cómo Funciona?
 ]
 .right-column[
 ### Arquitectura del sistema Logstash
@@ -414,8 +414,8 @@ layout: false
 # Logstash
 
 .left-column[
-###¿Qué es Logstash?
-##¿Como Funciona?
+###¿Qué es?
+##¿Cómo Funciona?
 ]
 .right-column[
 ### Arquitectura del sistema Logstash
@@ -434,7 +434,7 @@ Algunos de estos componentes pueden estar en la misma maquina, pueden ser un mis
 
 .left-column[
 ###¿Qué es?
-##¿Como Funciona?
+##¿Cómo Funciona?
 ]
 .right-column[
 ### Arquitectura del sistema Logstash
