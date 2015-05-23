@@ -836,6 +836,34 @@ Algunos de estos componentes pueden estar en la misma maquina, pueden ser un mis
 # Instalación en Upptalk
 
 .left-column[
+## Detalles
 ]
 .right-column[
+### Dos entornos: test y producción
+]
+---
+# Instalación en Upptalk
+
+.left-column[
+## Detalles
+]
+.right-column[
+#### Dos entornos: test y producción
+### Instalado en todos los entornos
+]
+---
+# Instalación en Upptalk
+
+.left-column[
+### Detalles
+## Arquitectura
+]
+.right-column[
+### Logstash
+
+- Instalado en cada servidor de producción y test
+- Lee de varios ficheros: syslog, errores, acceso, aplicación, ...
+- Realiza el etiquetado de tipo de log en el agente del servidor
+- Cada agente envía a un Redis central donde también esta el Logstash y Elasticsearch
+- El proceso de tratamiento de logs se realiza en el servidor central recogiendo los datos desde el Redis y enviandolos a Elasticsearch una vez procesados 
 ]
