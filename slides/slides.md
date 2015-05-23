@@ -409,6 +409,23 @@ layout: false
 	- Si lo tenemos, es el encargado de recoger todos los logs que envian los shippers para que posteriormente el Logstash central los coja para procesarlos
 - #### Logstash Central
 	- Es el encargado de recoger todos los logs del broker o los agentes de logstash y aplicarles una logica definida por el usuario para modificarlos, parsearlos y enviar el resultado a una serie de salidas (Elasticsearch, Nagios, Mail, etc...)
+]
+---
+# Logstash
+
+.left-column[
+###¿Qué es Logstash?
+##¿Como Funciona?
+]
+.right-column[
+### Arquitectura del sistema Logstash
+
+- #### Shipper
+	- Es el servicio que corre en cada maquina y se encarga de recoger los logs deseados, taggearlos y enviarlos a un "broker" o al servicio central de Logstash
+- #### Broker
+	- Si lo tenemos, es el encargado de recoger todos los logs que envian los shippers para que posteriormente el Logstash central los coja para procesarlos
+- #### Logstash Central
+	- Es el encargado de recoger todos los logs del broker o los agentes de logstash y aplicarles una logica definida por el usuario para modificarlos, parsearlos y enviar el resultado a una serie de salidas (Elasticsearch, Nagios, Mail, etc...)
 
 Algunos de estos componentes pueden estar en la misma maquina, pueden ser un mismo proceso realizando varios de los roles e incluso alguno puede no existir en nuestra instalación.
 ]
