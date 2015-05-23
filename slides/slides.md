@@ -383,8 +383,8 @@ layout: false
 # Logstash
 
 .left-column[
-###¿Qué es Logstash?
-##¿Como Funciona?
+###¿Qué es?
+##¿Cómo Funciona?
 ]
 .right-column[
 ### Arquitectura del sistema Logstash
