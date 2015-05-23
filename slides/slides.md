@@ -256,9 +256,9 @@ layout: false
 ### Logstash
 ## Kibana
 
+- ####Escrito en NodeJS
 - ####Panel de control para búsquedas y análisis sobre ElasticSearch
 - ####Muy sencillo
-- ####Escrito en NodeJS
 - ####Democratización del acceso a los datos
 - ####Permite generar histogramas, análisis de términos, mapas, tablas,...
 - ####Muy simple y bastante eficiente
