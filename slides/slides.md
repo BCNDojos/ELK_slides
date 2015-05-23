@@ -319,9 +319,8 @@ Mediante el uso de plugins podemos trabajar con:
 	- RSyslog 
 	- RSyslog-NG
 	- Logstash agent
-	- Lumberjack
-	- Logstash-forwareder
-	- Snare for Widnows
+	- Logstash-forwarder
+	- Snare for Windows
 	- KiwiSyslog
 	- Syslog-Win32
 	- ...
@@ -343,6 +342,7 @@ Es una aplicación JRuby de tratamiento de logs que permite:
 Mediante el uso de plugins podemos trabajar con:
 
 - Distintos sistemas de envio de logs 
+
 - Varios tipos de procesado y modificacion de logs
 	- Parseado
 	- Mutación
@@ -368,8 +368,13 @@ Es una aplicación JRuby de tratamiento de logs que permite:
 Mediante el uso de plugins podemos trabajar con:
 
 - Distintos sistemas de envio de logs 
+
 - Varios tipos de procesado y modificacion de logs
+
 - Varias soluciones de almacenamiento/salida de datos
 	- Almacenamiendo en Elasticsearch
 	- Envio de mails según lógica y filtros preestablecidos
-	- 
+	- Envio de mensajes a través xmpp
+	- Envio de alertas a Nagios
+	- Creación de metricas usando StatsD
+]
