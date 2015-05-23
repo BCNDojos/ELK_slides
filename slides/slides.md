@@ -42,10 +42,10 @@ layout: false
 
 ## Recolectar registros
 
-- Desde distintos orígenes: ficheros, flujos, sistema, ...
-- Pretratamiento
-- Clasificación inicial
-- Encaminamiento a distintos destinos
+- ####Desde distintos orígenes: ficheros, flujos, sistema, ...
+- ####Pretratamiento
+- ####Clasificación inicial
+- ####Encaminamiento a distintos destinos
 
 ]
 ---
@@ -58,11 +58,11 @@ layout: false
 ### Recolectar registros
 ## Tratamiento de los datos
 
-- Extracción de datos
-- Transformación de tipos
-- Etiquetado de los registros
-- Creación de nuevos datos según otros presentes
-- Uso de expresiones regulares para el *parsing*
+- ####Extracción de datos
+- ####Transformación de tipos
+- ####Etiquetado de los registros
+- ####Creación de nuevos datos según otros presentes
+- ####Uso de expresiones regulares para el *parsing*
 
 ]
 ---
@@ -76,10 +76,10 @@ layout: false
 ### Tratamiento de los datos
 ## Análisis
 
-- Indexación para búsquedas
-- Agregación
-- Clasificación
-- Correlación
+- ####Indexación para búsquedas
+- ####Agregación
+- ####Clasificación
+- ####Correlación
 
 ]
 ---
@@ -94,10 +94,10 @@ layout: false
 ### Análisis
 ## Visualización
 
-- Búsqueda
-- Selección
-- Vista en directo
-- Graficación
+- ####Búsqueda
+- ####Selección
+- ####Vista en directo
+- ####Graficación
 
 ]
 ---
@@ -110,14 +110,14 @@ layout: false
 
 ## Syslog
 
-- **Estándar de facto**, definido en [RFC3164](https://www.ietf.org/rfc/rfc3164.txt)
-- **Diferentes implementaciones existentes** en la mayoría de sistemas UN*X
-- Comunicación por **protocolo UDP** (puerto 514)
-- Desarrollado por [Eric Allman](http://en.wikipedia.org/wiki/Eric_Allman) para [Sendmail](http://en.wikipedia.org/wiki/Sendmail)
-- Permite dos tipos de categorizaciones:
+- ####**Estándar de facto**, definido en [RFC3164](https://www.ietf.org/rfc/rfc3164.txt)
+- ####**Diferentes implementaciones existentes** en la mayoría de sistemas UN*X
+- ####Comunicación por **protocolo UDP** (puerto 514)
+- ####Desarrollado por [Eric Allman](http://en.wikipedia.org/wiki/Eric_Allman) para [Sendmail](http://en.wikipedia.org/wiki/Sendmail)
+- ####Permite dos tipos de categorizaciones:
   + **Facility**: Indica el tipo de aplicación que hace el registro. Hay 24 tipos distintos.
   + **Severity**: Se refiere a la gravedad del evento registrado. Hay 8 tipos diferentes.
-- Observaciones:
+- ####Observaciones:
   + **Baja confiabilidad**: El protocolo UDP permite pérdida y no garantiza el orden de los mensajes.
   + **Falta de herramientas**: No incluye herramientas de análisis ni tratamiento.
   + **Falta de mecanismos de autenticación**: No hay mecanismos de autenticación en ningún sentido.
@@ -134,13 +134,13 @@ layout: false
 ### Syslog
 ## Fluentd
 
-- **Colector de logs**
-- Permite distintos orígenes y destinos
-- Incluye la posibilidad de filtrar, regular y dirigir mensajes
-- Internamente, convierte los mensajes en documentos JSON
-- Tiene posibilidad de conectar plugins
-- Hecho en C y Ruby
-- Observaciones:
+- ####**Colector de logs**
+- ####Permite distintos orígenes y destinos
+- ####Incluye la posibilidad de filtrar, regular y dirigir mensajes
+- ####Internamente, convierte los mensajes en documentos JSON
+- ####Tiene posibilidad de conectar plugins
+- ####Hecho en C y Ruby
+- ####Observaciones:
   + **Poco conocido**: Aunque es relativamente conocido en la comunidad Ruby, no lo es mucho fuera de ella.
   + **Sustituto de Logstask**: Existe algo de información sobre cómo pasar de ELK a EFK.
 
@@ -157,9 +157,9 @@ layout: false
 ### Fluentd
 ## Flume
 
-- Otro **colector de logs**, pero distribuido
-- Envía los logs a Hadoop
-- Observaciones:
+- ####Otro **colector de logs**, pero distribuido
+- ####Envía los logs a Hadoop
+- ####Observaciones:
   + **Poco conocido**: Aún menos conocido que Fluentd, posiblemente más reconocido en entornos con Hadoop
 
 ]
@@ -176,9 +176,9 @@ layout: false
 ### Flume
 ## Splunk
 
-- Plataforma similar a ELK, pero bastante anterior
-- Sólo tiene licencia comercial
-- Observaciones:
+- ####Plataforma similar a ELK, pero bastante anterior
+- ####Sólo tiene licencia comercial
+- ####Observaciones:
   + **Conocimiento**: Aunque es bastante conocido, no parece que haya muchos usuarios
 
 ]
@@ -196,10 +196,10 @@ layout: false
 ### Splunk
 ## SaaS (Loggly, Papertrail, Logentries, Sentry)
 
-- Servicios online
-- Tráfico máximo y rentención limitados y relativos al precio
-- Información sensible en sistemas externos
-- Algunos casos requieren tener agentes o enviar desde la aplicación directamente
+- ####Servicios online
+- ####Tráfico máximo y rentención limitados y relativos al precio
+- ####Información sensible en sistemas externos
+- ####Algunos casos requieren tener agentes o enviar desde la aplicación directamente
 
 ]
 ---
@@ -213,13 +213,13 @@ layout: false
 
 ## Elasticsearch
 
-- Motor de indexación y búsqueda orientado a documento
-- Escrito en Java
-- API REST basada en JSON
-- Funcionalidades analíticas
-- Sin esquema
-- Uso de plugins para ampliar funcionalidades
-- Disponibilidad
+- ####Motor de indexación y búsqueda orientado a documento
+- ####Escrito en Java
+- ####API REST basada en JSON
+- ####Funcionalidades analíticas
+- ####Sin esquema
+- ####Uso de plugins para ampliar funcionalidades
+- ####Disponibilidad
 
 ]
 ---
@@ -234,13 +234,13 @@ layout: false
 ### Elasticsearch
 ## Logstash
 
-- Recocopila registros de los eventos que se quieren registrar
-- Múltiple fuentes de tipos distintos
-- Preprocesado y normalización
-- Transporte hasta uno o más destinos finales
-- Capacidad de encaminamiento
-- Escrito en JRuby
-- Entradas, salidas, codecs y filtros ampliables mediante plugins
+- ####Recocopila registros de los eventos que se quieren registrar
+- ####Múltiple fuentes de tipos distintos
+- ####Preprocesado y normalización
+- ####Transporte hasta uno o más destinos finales
+- ####Capacidad de encaminamiento
+- ####Escrito en JRuby
+- ####Entradas, salidas, codecs y filtros ampliables mediante plugins
 
 ]
 ---
@@ -256,12 +256,12 @@ layout: false
 ### Logstash
 ## Kibana
 
-- Panel de control para búsquedas y análisis sobre ElasticSearch
-- Muy sencillo
-- Escrito en NodeJS
-- Democratización del acceso a los datos
-- Permite generar histogramas, análisis de términos, mapas, tablas,...
-- Muy simple y bastante eficiente
+- ####Panel de control para búsquedas y análisis sobre ElasticSearch
+- ####Muy sencillo
+- ####Escrito en NodeJS
+- ####Democratización del acceso a los datos
+- ####Permite generar histogramas, análisis de términos, mapas, tablas,...
+- ####Muy simple y bastante eficiente
 
 ]
 ---
@@ -278,10 +278,10 @@ layout: false
 ### Kibana
 ## Otros componentes
 
-- Logstash-forwarder
-- Beaver
-- Woodchuck
-- Redis
+- ####Logstash-forwarder
+- ####Beaver
+- ####Woodchuck
+- ####Redis
 
 ]
 ---
@@ -299,105 +299,121 @@ Recoge todos los logs de una serie de entradas para filtrarlos, modificarlos, a�
 ---
 # ElasticSearch
 .left-column[
-## Motor de indexación
+## ¿Qué es?
 ]
 .right-column[
 
-- Sistema que recibe datos y los ordena
-- Basado en Apache Lucene
-- Los datos se almacenan en índices
-- Cada índice tiene :
+## Motor de indexación
+
+- ####Sistema que recibe datos y los ordena
+- ####Basado en Apache Lucene
+- ####Los datos se almacenan en índices
+- ####Cada índice tiene :
   + una configuración
   + una definición
   + un conjunto de plantillas
-- Los campos se pueden analizar de muchas formas
+- ####Los campos se pueden analizar de muchas formas
 
 ]
 ---
 # ElasticSearch
 .left-column[
-### Motor de indexación
-## Orientado a documento
+## ¿Qué es?
 ]
 .right-column[
 
-- Los datos están organizados en documentos
-- Formato JSON
-- La carga de documentos es bastante eficiente
-- Se pueden cargar documentos en masa
-- Mantiene la copia original
-- Mantiene la cuenta de la versión de cada documento
-- Permite anidamiento de documentos
+### Motor de indexación
+## Orientado a documento
+
+- ####Los datos están organizados en documentos
+- ####Formato JSON
+- ####La carga de documentos es bastante eficiente
+- ####Se pueden cargar documentos en masa
+- ####Mantiene la copia original
+- ####Mantiene la cuenta de la versión de cada documento
+- ####Permite anidamiento de documentos
 
 ]
 ---
 # ElasticSearch
 .left-column[
+## ¿Qué es?
+]
+.right-column[
+
 ### Motor de indexación
 ### Orientado a documento
 ## Esquema dinámico
-]
-.right-column[
 
-- Los campos del documento no se definen previamente
-- La estructura de los documentos puede cambiar
-- Si un documento no contiene un campo solicitado, se muestra como no existente
-- Es opcional, se pueden definir algunos o todos los campos de los documentos
+- ####Los campos del documento no se definen previamente
+- ####La estructura de los documentos puede cambiar
+- ####Si un documento no contiene un campo solicitado, se muestra como no existente
+- ####Es opcional, se pueden definir algunos o todos los campos de los documentos
 
 ]
 ---
 # ElasticSearch
 .left-column[
+## ¿Qué es?
+]
+.right-column[
+
 ### Motor de indexación
 ### Orientado a documento
 ### Esquema dinámico
 ## Motor de búsqueda
-]
-.right-column[
 
-- Permite realizar búsquedas sobre los datos indexados
-- Permite definir filtros sobre las búsquedas para restringirlas
-- Parametrización sobre los datos, sus estadísticas, ...
-- Permite obtener facetas de las búsquedas
+- ####Permite realizar búsquedas sobre los datos indexados
+- ####Permite definir filtros sobre las búsquedas para restringirlas
+- ####Parametrización sobre los datos, sus estadísticas, ...
+- ####Permite obtener facetas de las búsquedas
 
 ]
 ---
 # ElasticSearch
 .left-column[
+## ¿Qué es?
+]
+.right-column[
+
 ### Motor de indexación
 ### Orientado a documento
 ### Esquema dinámico
 ### Motor de búsqueda
 ## API REST basada en JSON
-]
-.right-column[
 
-- La comunicación se realiza mediante una API REST
-- Los mensajes, tanto de petición como de respuesta, son JSON
+- ####La comunicación se realiza mediante una API REST
+- ####Los mensajes, tanto de petición como de respuesta, son JSON
 
 ]
 ---
 # ElasticSearch
 .left-column[
+## ¿Qué es?
+]
+.right-column[
+
 ### Motor de indexación
 ### Orientado a documento
 ### Esquema dinámico
 ### Motor de búsqueda
 ### API REST basada en JSON
 ## Funcionalidades analíticas
-]
-.right-column[
 
-- Análisis de términos
-- Rangos numéricos, de fecha, de IP
-- Cálculo de distancias geográficas
-- Generación de histogramas
-- Estadísticas: Media, máximo, mínimo, suma, percentiles,...
+- ####Análisis de términos
+- ####Rangos numéricos, de fecha, de IP
+- ####Cálculo de distancias geográficas
+- ####Generación de histogramas
+- ####Estadísticas: Media, máximo, mínimo, suma, percentiles,...
 
 ]
 ---
 # ElasticSearch
 .left-column[
+## ¿Qué es?
+]
+.right-column[
+
 ### Motor de indexación
 ### Orientado a documento
 ### Esquema dinámico
@@ -405,12 +421,29 @@ Recoge todos los logs de una serie de entradas para filtrarlos, modificarlos, a�
 ### API REST basada en JSON
 ### Funcionalidades analíticas
 ## Disponibilidad
+
+- ####Distribuido entre varios nodos
+- ####Permite descubrimiento de nodos
+- ####Realiza *sharding* entre los nodos de forma automática
+- ####Distribuye la carga de las consultas entre los nodos presentes
+
+]
+---
+# ElasticSearch
+.left-column[
+### ¿Qué es?
+## ¿Cómo funciona?
 ]
 .right-column[
 
-- Distribuido entre varios nodos
-- Permite descubrimiento de nodos
-- Realiza *sharding* entre los nodos de forma automática
-- Distribuye la carga de las consultas entre los nodos presentes
+]
+---
+# ElasticSearch
+.left-column[
+### ¿Qué es?
+### ¿Cómo funciona?
+## ¿Qué hace?
+]
+.right-column[
 
 ]
