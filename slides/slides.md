@@ -293,10 +293,10 @@ layout: false
 .right-column[
 ###Es una aplicación JRuby de tratamiento de logs que permite:
 
-- Recolectar
-- Centralizar
-- Parsear/Modificar
-- Enviar a un storage
+- ####Recolectar
+- ####Centralizar
+- ####Parsear/Modificar
+- ####Enviar a un storage
 ]
 ---
 # Logstash
@@ -307,14 +307,9 @@ layout: false
 .right-column[
 ###Es una aplicación JRuby de tratamiento de logs que permite:
 
-- Recolectar
-- Centralizar
-- Parsear/Modificar
-- Enviar a un storage
-
 ###Mediante el uso de plugins podemos trabajar con:
 
-- Distintos sistemas de envio de logs 
+- ####Distintos sistemas de envio de logs 
 	- Syslogd
 	- RSyslog 
 	- RSyslog-NG
@@ -334,16 +329,11 @@ layout: false
 .right-column[
 ###Es una aplicación JRuby de tratamiento de logs que permite:
 
-  - ####Recolectar
-  - ####Centralizar
-  - ####Parsear/Modificar
-  - ####Enviar a un storage
-
 ###Mediante el uso de plugins podemos trabajar con:
 
-- Distintos sistemas de envio de logs 
+- ####Distintos sistemas de envio de logs 
 
-- Varios tipos de procesado y modificacion de logs
+- ####Varios tipos de procesado y modificacion de logs
 	- Parseado
 	- Mutación
 	- Limpieza
@@ -360,18 +350,13 @@ layout: false
 .right-column[
 ###Es una aplicación JRuby de tratamiento de logs que permite:
 
-- Recolectar
-- Centralizar
-- Parsear/Modificar
-- Enviar a un storage
-
 ###Mediante el uso de plugins podemos trabajar con:
 
-- Distintos sistemas de envio de logs 
+- ####Distintos sistemas de envio de logs 
 
-- Varios tipos de procesado y modificacion de logs
+- ####Varios tipos de procesado y modificacion de logs
 
-- Varias soluciones de almacenamiento/salida de datos
+- ####Varias soluciones de almacenamiento/salida de datos
 	- Almacenamiendo en Elasticsearch
 	- Envio de mails según lógica y filtros preestablecidos
 	- Envio de mensajes a través xmpp
