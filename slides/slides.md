@@ -786,7 +786,7 @@ Algunos de estos componentes pueden estar en la misma maquina, pueden ser un mis
 ]
 .right-column[
 #### Tres entornos: develop, master y producción
-### Actualmente sólo instalado en develop y master
+### Actualmente, sólo en uso para develop y master
 
 ]
 ---
@@ -799,7 +799,7 @@ Algunos de estos componentes pueden estar en la misma maquina, pueden ser un mis
 .right-column[
 ### Logstash
 
-- Instalado en cada servidor de producción
+- Instalado en cada servidor
 - Lee de varios ficheros: syslog, errores, acceso, aplicación, ...
 - Realiza el pre-tratamiento
 - Envía a un syslog y a un ElasticSearch
@@ -818,7 +818,7 @@ Algunos de estos componentes pueden estar en la misma maquina, pueden ser un mis
 ### ElasticSearch y Kibana
 
 - Un cluster con un sólo nodo
-- Kibana
+- Kibana instalado en el mismo servidor
 
 ]
 ---
@@ -830,6 +830,22 @@ Algunos de estos componentes pueden estar en la misma maquina, pueden ser un mis
 ## Casos de uso
 ]
 .right-column[
+
+### Visualización de eventos en tiempo (casi) real
+
+]
+---
+# Instalación en Devex
+
+.left-column[
+### Detalles
+### Arquitectura
+## Casos de uso
+]
+.right-column[
+
+#### Visualización de eventos en tiempo (casi) real
+### Detección de errores
 
 ]
 ---
