@@ -153,8 +153,8 @@ layout: false
 .right-column[
 
 ### Syslog
-### Fluentd
-## Flume
+### [Fluentd](http://www.fluentd.org/)
+## [Flume](https://flume.apache.org/)
 
 - ####Otro **colector de logs**, pero distribuido
 - ####Envía los logs a Hadoop
@@ -171,9 +171,9 @@ layout: false
 .right-column[
 
 ### Syslog
-### Fluentd
-### Flume
-## Splunk
+### [Fluentd](http://www.fluentd.org/)
+### [Flume](https://flume.apache.org/)
+## [Splunk](http://www.splunk.com/)
 
 - ####Plataforma similar a ELK, pero bastante anterior
 - ####Sólo tiene licencia comercial
@@ -190,10 +190,10 @@ layout: false
 .right-column[
 
 ### Syslog
-### Fluentd
-### Flume
-### Splunk
-## Loggly, Papertrail, Logentries, Sentry
+### [Fluentd](http://www.fluentd.org/)
+### [Flume](https://flume.apache.org/)
+## [Splunk](http://www.splunk.com/)
+## [Loggly](https://www.loggly.com/), [Papertrail](https://papertrailapp.com/), [Logentries](https://logentries.com/), [Sentry](https://getsentry.com/welcome/)
 
 - ####Servicios en línea
 - ####Tráfico máximo y retención limitados y relativos al precio
@@ -210,9 +210,9 @@ layout: false
 ]
 .right-column[
 
-## Elasticsearch
+## [Elasticsearch](https://www.elastic.co/products/elasticsearch)
 
-- ####Escrito en Java por Shay Banon
+- ####Escrito en Java por [Shay Banon](https://twitter.com/kimchy)
 - ####Motor de indexación y búsqueda orientado a documento
 - ####Escrito en Java
 - ####API REST basada en JSON
@@ -231,10 +231,10 @@ layout: false
 ]
 .right-column[
 
-### Elasticsearch
-## Logstash
+### [Elasticsearch](https://www.elastic.co/products/elasticsearch)
+## [Logstash](https://www.elastic.co/products/logstash)
 
-- ####Escrito en JRuby por Jordan Sissel
+- ####Escrito en JRuby por [Jordan Sissel](https://twitter.com/jordansissel)
 - ####Recopila registros de los eventos
 - ####Múltiples fuentes de tipos distintos
 - ####Pre-procesado y normalización de los datos
@@ -252,9 +252,9 @@ layout: false
 ]
 .right-column[
 
-### Elasticsearch
-### Logstash
-## Kibana
+### [Elasticsearch](https://www.elastic.co/products/elasticsearch)
+### [Logstash](https://www.elastic.co/products/logstash)
+## [Kibana](https://www.elastic.co/products/kibana)
 
 - ####Escrito en NodeJS
 - ####Panel de control para búsquedas y análisis sobre ElasticSearch
@@ -273,15 +273,15 @@ layout: false
 ]
 .right-column[
 
-### Elasticsearch
-### Logstash
-### Kibana
+### [Elasticsearch](https://www.elastic.co/products/elasticsearch)
+### [Logstash](https://www.elastic.co/products/logstash)
+### [Kibana](https://www.elastic.co/products/kibana)
 ## Otros componentes
 
-- ####Logstash-forwarder
-- ####Beaver
-- ####Woodchuck
-- ####Redis
+- #### [Logstash-forwarder](https://github.com/elastic/logstash-forwarder)
+- #### [Beaver](http://beaver.readthedocs.org/en/latest/)
+- #### [Woodchuck](https://github.com/danryan/woodchuck)
+- #### [Redis](http://redis.io/)
 
 ]
 ---
@@ -502,7 +502,7 @@ Algunos de estos componentes pueden estar en la misma maquina, pueden ser un mis
 ### Motor de indexación
 
 - ####Sistema que recibe datos y los ordena
-- ####Basado en Apache Lucene, escrito en Java por Doug Cutting en 1999
+- ####Basado en [Apache Lucene](https://lucene.apache.org/core/), escrito en Java por [Doug Cutting](https://twitter.com/cutting) en 1999
 - ####Los datos se almacenan en índices
 - ####Se pueden realizar análisis de diferentes tipos
 
@@ -769,7 +769,7 @@ Algunos de estos componentes pueden estar en la misma maquina, pueden ser un mis
   - ####Generar cuadros de mando agrupando graficos y visualizaciones
 ]
 ---
-# Instalación en Devex
+# Instalación en [Devex](https://www.devex.com/)
 
 .left-column[
 ## Detalles
@@ -779,7 +779,7 @@ Algunos de estos componentes pueden estar en la misma maquina, pueden ser un mis
 
 ]
 ---
-# Instalación en Devex
+# Instalación en [Devex](https://www.devex.com/)
 
 .left-column[
 ## Detalles
@@ -790,7 +790,7 @@ Algunos de estos componentes pueden estar en la misma maquina, pueden ser un mis
 
 ]
 ---
-# Instalación en Devex
+# Instalación en [Devex](https://www.devex.com/)
 
 .left-column[
 ### Detalles
@@ -807,7 +807,7 @@ Algunos de estos componentes pueden estar en la misma maquina, pueden ser un mis
 
 ]
 ---
-# Instalación en Devex
+# Instalación en [Devex](https://www.devex.com/)
 
 .left-column[
 ### Detalles
@@ -822,7 +822,7 @@ Algunos de estos componentes pueden estar en la misma maquina, pueden ser un mis
 
 ]
 ---
-# Instalación en Devex
+# Instalación en [Devex](https://www.devex.com/)
 
 .left-column[
 ### Detalles
@@ -835,7 +835,7 @@ Algunos de estos componentes pueden estar en la misma maquina, pueden ser un mis
 
 ]
 ---
-# Instalación en Devex
+# Instalación en [Devex](https://www.devex.com/)
 
 .left-column[
 ### Detalles
