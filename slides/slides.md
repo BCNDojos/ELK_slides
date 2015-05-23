@@ -459,7 +459,7 @@ Algunos de estos componentes pueden estar en la misma maquina, pueden ser un mis
 .right-column[
 ### Arquitectura del sistema Logstash
 
-  - ####Shipper, Broker, Logstash Central
+ ####Shipper, Broker, Logstash Central
 
 - ###Recolección
 
@@ -468,4 +468,22 @@ Algunos de estos componentes pueden estar en la misma maquina, pueden ser un mis
   Es la fase en que parseamos, modificamos, añadimos datos
 
   - Se aplican una serie de filtros según una lógica que definimos en el fichero de configuración que nos permiten realizar todas las modificaciones citadas anteriormente
+]
+---
+# Logstash
+
+.left-column[
+###¿Qué es?
+##¿Cómo Funciona?
+]
+.right-column[
+### Arquitectura del sistema Logstash
+
+ ####Shipper, Broker, Logstash Central
+
+- ###Recolección
+
+- ###Tratamiento
+
+- ###Envio  
 ]
