@@ -519,5 +519,5 @@ Algunos de estos componentes pueden estar en la misma maquina, pueden ser un mis
 
   - ####Generar representaciones gráficas de dichos datos (lineas, columnas, pastel, mapa,etc...)
 
-  - ####Generar cuadros de mando agrupando dichos graficos y visualización de datos
+  - ####Generar cuadros de mando agrupando graficos y visualizaciones
 ]
