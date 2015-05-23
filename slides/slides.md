@@ -288,26 +288,208 @@ layout: false
 # Logstash
 
 .left-column[
-##¿Qué es Logstash?##
-
-Es una aplicación JRuby de tratamiento de logs que permite:
+##¿Qué es?
 ]
 .right-column[
---
--Recolectar
---
--Centralizar
---
--Parsear/Modificar
---
--Enviar a un storage
---
-Mediante el uso de plugins podemos trabajar con distintos sistemas de envio de logs, varios tipos de procesado y modificación de logs, varias soluciones de almacenamiento de datos, análisis y visualización.
+###Es una aplicación JRuby de tratamiento de logs que permite:
+
+- ####Recolectar
+- ####Centralizar
+- ####Parsear/Modificar
+- ####Enviar a una salida
 ]
 ---
-**- ¿ Cómo funciona?**
-Consta de un proceso corriendo en todos nuestros servidores que envia los logs a un Redis para centralizar toda la información, para el envio se pueden usar varias soluciones como RSyslog, Logstash Agent, Syslogd, Syslog-NG. Posteriormente un proceso de Logstash los recoje/modifica los logs como le hayamos dicho para mandarlos finalmente a Elasticsearch. 
+# Logstash
+
+.left-column[
+##¿Qué es?
+]
+.right-column[
+###Es una aplicación JRuby de tratamiento de logs que permite:
+  - ####Recolectar, centralizar, parsear/modificar, enviar a una salida.
+
+###Mediante el uso de plugins podemos trabajar con:
+
+- ####Distintos sistemas de envio de logs 
+	- Syslogd
+	- RSyslog 
+	- RSyslog-NG
+	- Logstash agent
+	- Logstash-forwarder
+	- Snare for Windows
+	- KiwiSyslog
+	- Syslog-Win32
+	- ...
 ]
 ---
-**- ¿Qué hace?**
-Recoge todos los logs de una serie de entradas para filtrarlos, modificarlos, añadirles tags, hacer match de expresiones regulares/filtros GROK, limpiar logs, crear checksums para deduplicación de eventos, extraer pares de clave/valor, realizar descubrimento Geoip y DNS, monitorizar rangos de datos en campos para alertas, separar en distintos eventos de un mensaje y anonimizar datos. Todos estos filtros pueden usarse aplicando unas reglas de lógica que nos permiten un sinfín de posibilidades como anonimizar unos logs para su uso en el entorno de test mientras se les aplica con otro filtro una modificación de los campos y añadido de tags para que la linea tenga los datos separados y las etiquetas que habremos definido nosotros para posteriormente crear un Dashboard en Kibana donde se muestra que los nuevos usuarios IOS han sido un 20% mas altos en Enero que en Diciembre y que el ratio de errores en estos ha bajado un 3%, todo esto acompañado de mapa que nos muestra que tanto por ciento corresponde a cada pais usando la localización por GeoIP.
+# Logstash
+
+.left-column[
+##¿Qué es?
+]
+.right-column[
+###Es una aplicación JRuby de tratamiento de logs que permite:
+  - ####Recolectar, centralizar, parsear/modificar, enviar a una salida.
+
+###Mediante el uso de plugins podemos trabajar con:
+
+- ####Distintos sistemas de envio de logs 
+
+- ####Varios tipos de procesado y modificacion de logs
+	- Parseado
+	- Mutación
+	- Limpieza
+	- Añadido de campos
+	- Geolocalización
+	- Deduplicación de eventos
+	- ...
+]
+---
+# Logstash
+
+.left-column[
+##¿Qué es?
+]
+.right-column[
+###Es una aplicación JRuby de tratamiento de logs que permite:
+  - ####Recolectar, centralizar, parsear/modificar, enviar a una salida.
+
+###Mediante el uso de plugins podemos trabajar con:
+
+- ####Distintos sistemas de envio de logs 
+
+- ####Varios tipos de procesado y modificacion de logs
+
+- ####Varias soluciones de almacenamiento/salida de datos
+	- Almacenamiendo en Elasticsearch
+	- Envio de mails según lógica y filtros preestablecidos
+	- Envio de mensajes a través xmpp
+	- Envio de alertas a Nagios
+	- Creación de metricas usando StatsD
+]
+---
+# Logstash
+
+.left-column[
+###¿Qué es?
+##¿Cómo Funciona?
+]
+.right-column[
+### Arquitectura del sistema Logstash
+- #### Shipper
+	- Es el servicio que corre en cada maquina y se encarga de recoger los logs deseados, taggearlos y enviarlos a un "broker" o al servicio central de Logstash
+]
+---
+# Logstash
+
+.left-column[
+###¿Qué es?
+##¿Cómo Funciona?
+]
+.right-column[
+### Arquitectura del sistema Logstash
+- #### Shipper
+	- Es el servicio que corre en cada maquina y se encarga de recoger los logs deseados, taggearlos y enviarlos a un "broker" o al servicio central de Logstash
+- #### Broker
+	- Si lo tenemos, es el encargado de recoger todos los logs que envian los shippers para que posteriormente el Logstash central los coja para procesarlos
+]
+---
+# Logstash
+
+.left-column[
+###¿Qué es?
+##¿Cómo Funciona?
+]
+.right-column[
+### Arquitectura del sistema Logstash
+
+- #### Shipper
+	- Es el servicio que corre en cada maquina y se encarga de recoger los logs deseados, taggearlos y enviarlos a un "broker" o al servicio central de Logstash
+- #### Broker
+	- Si lo tenemos, es el encargado de recoger todos los logs que envian los shippers para que posteriormente el Logstash central los coja para procesarlos
+- #### Logstash Central
+	- Es el encargado de recoger todos los logs del broker o los agentes de logstash y aplicarles una logica definida por el usuario para modificarlos, parsearlos y enviar el resultado a una serie de salidas (Elasticsearch, Nagios, Mail, etc...)
+]
+---
+# Logstash
+
+.left-column[
+###¿Qué es?
+##¿Cómo Funciona?
+]
+.right-column[
+### Arquitectura del sistema Logstash
+
+- #### Shipper
+	- Es el servicio que corre en cada maquina y se encarga de recoger los logs deseados, taggearlos y enviarlos a un "broker" o al servicio central de Logstash
+- #### Broker
+	- Si lo tenemos, es el encargado de recoger todos los logs que envian los shippers para que posteriormente el Logstash central los coja para procesarlos
+- #### Logstash Central
+	- Es el encargado de recoger todos los logs del broker o los agentes de logstash y aplicarles una logica definida por el usuario para modificarlos, parsearlos y enviar el resultado a una serie de salidas (Elasticsearch, Nagios, Mail, etc...)
+
+Algunos de estos componentes pueden estar en la misma maquina, pueden ser un mismo proceso realizando varios de los roles e incluso alguno puede no existir en nuestra instalación.
+]
+---
+# Logstash
+
+.left-column[
+###¿Qué es?
+##¿Cómo Funciona?
+]
+.right-column[
+### Arquitectura del sistema Logstash
+
+- ####Shipper, Broker, Logstash Central
+
+###Recolección
+
+  Es la fase donde el agente recoge, etiqueta y reenvia los logs
+
+  - Se definen una serie de entradas (inputs) en el fichero de configuración
+
+  - Se aplican una serie de etiquetas a fin de que posteriormente sea mas sencillo aplicar la lógica y filtros deseados
+]
+---
+# Logstash
+
+.left-column[
+###¿Qué es?
+##¿Cómo Funciona?
+]
+.right-column[
+### Arquitectura del sistema Logstash
+
+ - ####Shipper, Broker, Logstash Central
+
+###Recolección
+
+###Tratamiento
+
+  Es la fase en que parseamos, modificamos, añadimos datos
+
+  - Se aplican una serie de filtros según una lógica que definimos en el fichero de configuración que nos permiten realizar todas las modificaciones citadas anteriormente
+]
+---
+# Logstash
+
+.left-column[
+###¿Qué es?
+##¿Cómo Funciona?
+]
+.right-column[
+### Arquitectura del sistema Logstash
+
+ - ####Shipper, Broker, Logstash Central
+
+###Recolección
+
+###Tratamiento
+
+###Envio  
+
+  Es la fase en que enviamos los datos procesados
+ 
+ - Se definen una serie de salidas (outputs) en el fichero de configuración
+
+ - Podemos definir una lógica que aplique filtros de salida para que según el tipo de datos o etiquetas que hayamos añadido estos se envien a distintos destinos y en distintos formatos
+]
