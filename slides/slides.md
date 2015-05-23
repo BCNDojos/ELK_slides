@@ -443,11 +443,29 @@ Algunos de estos componentes pueden estar en la misma maquina, pueden ser un mis
 
 ### Recolección
 
-  Es la fase donde el agente recoje, etiqueta y reenvia los logs
+  Es la fase donde el agente recoge, etiqueta y reenvia los logs
 
   - Se definen una serie de entradas (inputs) en el fichero de configuración
 
-  - Se aplican una serie de etiquetas a fin de que posteriormente sea mas sencillo para el Logstash Central el aplicar la lógica y fitros deseados
+  - Se aplican una serie de etiquetas a fin de que posteriormente sea mas sencillo aplicar la lógica y filtros deseados
+]
+---
+# Logstash
 
-  - Se envian los datos al broker o logstash central para su posterior procesado
+.left-column[
+###¿Qué es?
+##¿Cómo Funciona?
+]
+.right-column[
+### Arquitectura del sistema Logstash
+
+  - ####Shipper, Broker, Logstash Central
+
+### Recolección
+
+### Tratamiento
+
+  Es la fase en que parseamos, modificamos, añadimos datos
+
+  - Se aplican una serie de filtros según una lógica que definimos en el fichero de configuración que nos permiten realizar todas las modificaciones citadas anteriormente
 ]
