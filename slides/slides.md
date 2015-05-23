@@ -285,7 +285,10 @@ layout: false
 
 ]
 ---
+background-image: url()
+---
 # Logstash
+.right[![Right-aligned image](http://logstash.net/images/logstash.png)]
 .left-column[
 ## ¿Qué es?
 ]
@@ -492,6 +495,8 @@ Algunos de estos componentes pueden estar en la misma maquina, pueden ser un mis
 
  - Podemos definir una lógica que aplique filtros de salida para que según el tipo de datos o etiquetas que hayamos añadido estos se envíen a distintos destinos y en distintos formatos
 ]
+---
+background-image: url()
 ---
 # ElasticSearch
 .left-column[
@@ -741,6 +746,8 @@ Algunos de estos componentes pueden estar en la misma maquina, pueden ser un mis
 
 ]
 ---
+background-image: url(https://www.paylease.com/corp/wp-content/uploads/2014/08/man-drawing-charts-and-graphs-e1416365886485.jpg)
+---
 # Kibana
 
 .left-column[
@@ -770,6 +777,8 @@ Algunos de estos componentes pueden estar en la misma maquina, pueden ser un mis
 
   - #### Exportación de datos en formato CSV
 ]
+---
+background-image: url()
 ---
 # Instalación en [Devex](https://www.devex.com/)
 
@@ -850,6 +859,8 @@ Algunos de estos componentes pueden estar en la misma maquina, pueden ser un mis
 ### Detección de errores
 
 ]
+---
+background-image: url()
 ---
 # Instalación en [Upptalk](http://upptalk.com)
 
@@ -1005,3 +1016,10 @@ Algunos de estos componentes pueden estar en la misma maquina, pueden ser un mis
 
 ## Control de las recompensas por visualización de anuncios
 ]
+---
+background-image: url()
+# ¿Preguntas?
+---
+background-image: url()
+# Muchas gracias
+[http://remarks.sinaapp.com/repo/BCNDojos/ELK_slides/slides/] (http://remarks.sinaapp.com/repo/BCNDojos/ELK_slides/slides/#1)
