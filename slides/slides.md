@@ -372,5 +372,11 @@ layout: false
 ##¿Como Funciona?
 ]
 .right-column[
-- ###Blablablabla
+### Componentes del sistema Logstash
+- #### Shipper
+	- Es el servicio que corre en cada maquina y se encarga de recoger los logs deseados, taggearlos y enviarlos a un "broker" central o al servicio dentral de Logstash
+- #### Broker
+	- Si lo tenemos es el encargado de recoger todos los logs que envian los shippers para que posteriormente el Logstash central los coja para procesarlos
+- #### Logstash Central
+	- Es el encargado de recoger todos los logs del broker o los agentes de logstash y aplicarles una logica definida por el usuario para modificarlos, parsearlos y enviar el resultado a una serie de salidas (Elasticsearch, Nagios, Mail, etc...)
 ]
