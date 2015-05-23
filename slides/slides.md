@@ -306,7 +306,7 @@ layout: false
 ]
 .right-column[
 ###Es una aplicación JRuby de tratamiento de logs que permite:
-	- Recolectar, centralizar, parsear/modificar, enviar a un storage.
+  - Recolectar, centralizar, parsear/modificar, enviar a un storage.
 
 ###Mediante el uso de plugins podemos trabajar con:
 
@@ -330,6 +330,7 @@ layout: false
 .right-column[
 ###Es una aplicación JRuby de tratamiento de logs que permite:
   - Recolectar, centralizar, parsear/modificar, enviar a un storage.
+  
 ###Mediante el uso de plugins podemos trabajar con:
 
 - ####Distintos sistemas de envio de logs 
