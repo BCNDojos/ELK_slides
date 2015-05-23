@@ -767,6 +767,8 @@ Algunos de estos componentes pueden estar en la misma maquina, pueden ser un mis
   - ####Generar representaciones gráficas de dichos datos (lineas, columnas, pastel, mapa,métrica, etc...)
 
   - ####Generar cuadros de mando agrupando graficos y visualizaciones
+
+  - ####Exportación de datos en formato CSV
 ]
 ---
 # Instalación en Devex
@@ -849,9 +851,174 @@ Algunos de estos componentes pueden estar en la misma maquina, pueden ser un mis
 
 ]
 ---
-# Instalación en Upptalk
+# Instalación en [Upptalk](http://upptalk.com)
 
 .left-column[
+## Detalles
 ]
 .right-column[
+### Dos entornos: test y producción
+]
+---
+# Instalación en [Upptalk](http://upptalk.com)
+
+.left-column[
+## Detalles
+]
+.right-column[
+#### Dos entornos: test y producción
+### Instalado en todos los entornos
+]
+---
+# Instalación en [Upptalk](http://upptalk.com)
+
+.left-column[
+### Detalles
+## Arquitectura
+]
+.right-column[
+### ELK
+
+- Logstash instalado en cada servidor de producción y test
+- Lee de varios ficheros: syslog, errores, acceso, aplicación, ...
+- Realiza el etiquetado de tipo de log en el agente del servidor y lo manda a Redis
+- Cada agente envía a un Redis central donde también esta el Logstash y Elasticsearch (1 nodo)
+- El proceso de tratamiento de logs se realiza en el servidor central recogiendo los datos desde el Redis y enviandolos a Elasticsearch una vez procesados por el Logstash central.
+]
+---
+# Instalación en [Upptalk](http://upptalk.com)
+
+.left-column[
+### Detalles
+### Arquitectura
+## Casos de uso
+]
+.right-column[
+## Visualización de eventos en tiempo (casi) real
+]
+---
+# Instalación en [Upptalk](http://upptalk.com)
+
+.left-column[
+### Detalles
+### Arquitectura
+## Casos de uso
+]
+.right-column[
+### Visualización de eventos en tiempo (casi) real
+
+## Control de compras e intento de fraude
+]
+
+---
+# Instalación en [Upptalk](http://upptalk.com)
+
+.left-column[
+### Detalles
+### Arquitectura
+## Casos de uso
+]
+.right-column[
+### Visualización de eventos en tiempo (casi) real
+
+### Control de compras e intento de fraude
+
+## Control de altas por tipo de dispositivo móvil y país
+]
+---
+# Instalación en [Upptalk](http://upptalk.com)
+
+.left-column[
+### Detalles
+### Arquitectura
+## Casos de uso
+]
+.right-column[
+### Visualización de eventos en tiempo (casi) real
+
+### Control de compras e intento de fraude
+
+### Control de altas de usuario por tipo de dispositivo móvil y país
+
+## Control de los agentes de monitorización en producción
+]
+---
+# Instalación en [Upptalk](http://upptalk.com)
+
+.left-column[
+### Detalles
+### Arquitectura
+## Casos de uso
+]
+.right-column[
+### Visualización de eventos en tiempo (casi) real
+
+### Control de compras e intento de fraude
+
+### Control de altas de usuario por tipo de dispositivo móvil y país
+
+## Control de los agentes de monitorización en producción
+]
+---
+# Instalación en [Upptalk](http://upptalk.com)
+
+.left-column[
+### Detalles
+### Arquitectura
+## Casos de uso
+]
+.right-column[
+### Visualización de eventos en tiempo (casi) real
+
+### Control de compras e intento de fraude
+
+### Control de altas de usuario por tipo de dispositivo móvil y país
+
+### Control de los agentes de monitorización en producción
+
+## Control del enrutado de llamadas por país y proveedor
+]
+---
+# Instalación en [Upptalk](http://upptalk.com)
+
+.left-column[
+### Detalles
+### Arquitectura
+## Casos de uso
+]
+.right-column[
+### Visualización de eventos en tiempo (casi) real
+
+### Control de compras e intento de fraude
+
+### Control de altas de usuario por tipo de dispositivo móvil y país
+
+### Control de los agentes de monitorización en producción
+
+### Control del enrutado de llamadas por país y proveedor
+
+## Control de los errores de verificación del usuario por teléfono/correo
+]
+---
+# Instalación en [Upptalk](http://upptalk.com)
+
+.left-column[
+### Detalles
+### Arquitectura
+## Casos de uso
+]
+.right-column[
+### Visualización de eventos en tiempo (casi) real
+
+### Control de compras e intento de fraude
+
+### Control de altas de usuario por tipo de dispositivo móvil y país
+
+### Control de los agentes de monitorización en producción
+
+### Control del enrutado de llamadas por país y proveedor
+
+### Control de los errores de verificación del usuario por teléfono/correo
+
+## Control de las recompensas por visualización de anuncios
 ]
