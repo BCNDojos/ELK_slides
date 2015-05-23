@@ -43,7 +43,7 @@ layout: false
 ## Recolectar registros
 
 - ####Desde distintos orígenes: ficheros, flujos, sistema, ...
-- ####Pretratamiento
+- ####Pre-tratamiento
 - ####Clasificación inicial
 - ####Encaminamiento a distintos destinos
 
@@ -97,7 +97,7 @@ layout: false
 - ####Búsqueda
 - ####Selección
 - ####Vista en directo
-- ####Graficación
+- ####Crear gráficas
 
 ]
 ---
@@ -137,11 +137,11 @@ layout: false
 - ####Permite distintos orígenes y destinos
 - ####Incluye la posibilidad de filtrar, regular y dirigir mensajes
 - ####Internamente, convierte los mensajes en documentos JSON
-- ####Tiene posibilidad de conectar plugins
+- ####Tiene posibilidad de conectar *plugins*
 - ####Hecho en C y Ruby
 - ####Observaciones:
   + **Poco conocido**: Aunque es relativamente conocido en la comunidad Ruby, no lo es mucho fuera de ella.
-  + **Sustituto de Logstask**: Existe algo de información sobre cómo pasar de ELK a EFK.
+  + **Sustituto de Logstash**: Existe algo de información sobre cómo pasar de ELK a EFK.
 
 ]
 ---
@@ -193,10 +193,10 @@ layout: false
 ### Fluentd
 ### Flume
 ### Splunk
-## SaaS (Loggly, Papertrail, Logentries, Sentry)
+## Loggly, Papertrail, Logentries, Sentry
 
-- ####Servicios online
-- ####Tráfico máximo y rentención limitados y relativos al precio
+- ####Servicios en línea
+- ####Tráfico máximo y retención limitados y relativos al precio
 - ####Información sensible en sistemas externos
 - ####Algunos casos requieren tener agentes o enviar desde la aplicación directamente
 
@@ -218,7 +218,7 @@ layout: false
 - ####API REST basada en JSON
 - ####Funcionalidades analíticas
 - ####Sin esquema
-- ####Uso de plugins para ampliar funcionalidades
+- ####Uso de *plugins* para ampliar funcionalidades
 - ####Disponibilidad
 
 ]
@@ -237,10 +237,10 @@ layout: false
 - ####Escrito en JRuby por Jordan Sissel
 - ####Recopila registros de los eventos
 - ####Múltiples fuentes de tipos distintos
-- ####Preprocesado y normalización de los datos
+- ####Pre-procesado y normalización de los datos
 - ####Transporte hasta uno o más destinos finales
 - ####Capacidad de encaminamiento
-- ####Entradas, salidas, codecs y filtros ampliables mediante plugins
+- ####Entradas, salidas, *codecs* y filtros ampliables mediante *plugins*
 
 ]
 ---
@@ -357,7 +357,7 @@ Recoge todos los logs de una serie de entradas para filtrarlos, modificarlos, a�
 
 - ####Realizar búsquedas sobre los datos indexados
 - ####Uso de filtros sobre las búsquedas
-- ####Parametrización sobre los datos, sus estadísticas, ...
+- ####Uso de parámetros sobre los datos, sus estadísticas, ...
 - ####Permite obtener facetas de las búsquedas
 
 ]
@@ -474,6 +474,7 @@ Recoge todos los logs de una serie de entradas para filtrarlos, modificarlos, a�
 - Cada *primary shard* puede tener 0 o más réplicas
 - La cantidad de réplicas escalará la disponibilidad y rendimiento
 - Los índices se dividen lógicamente en tipos
+- *Percolator*: Según consultas asociadas al índice, visualiza indexaciones coincidentes
 
 ]
 ---
@@ -493,6 +494,7 @@ Recoge todos los logs de una serie de entradas para filtrarlos, modificarlos, a�
 - ElasticSearch adivinará los tipos de datos, con cierto margen de error
 - El esquema se define con *mappings*
 - Se definen propiedades para cada campo del documento
+- Las propiedades definen lo que se hará, y cómo, con cada campo
 
 ]
 ---
@@ -507,40 +509,19 @@ Recoge todos los logs de una serie de entradas para filtrarlos, modificarlos, a�
 #### Interfaz
 #### Indices
 #### Esquema
-### Indexación
-
-]
----
-# ElasticSearch
-.left-column[
-### ¿Qué es?
-## ¿Cómo funciona?
-]
-.right-column[
-
-#### Instalación
-#### Interfaz
-#### Indices
-#### Esquema
-#### Indexación
 ### Análisis
 
-]
----
-# ElasticSearch
-.left-column[
-### ¿Qué es?
-## ¿Cómo funciona?
-]
-.right-column[
-
-#### Instalación
-#### Interfaz
-#### Indices
-#### Esquema
-#### Indexación
-#### Análisis
-### Búsqueda
+- Según se defina en el esquema, se realizarán unos u otros análisis sobre los datos
+- Textual: Dependen del idioma
+  + *Tokenization*: Identificar palabras
+  + *Stemming*: Identificar significado
+  + Filtrado: Identificar y eliminar palabras vacías y elementos de formato
+- Espacial:
+  + Dependiente de la geografía
+  + Distancias, polígonos
+- Otros posibles: Fecha, hora, importe, ...
+- Puntuación de relevancia
+- Se puede probar el análisis con la API
 
 ]
 ---
@@ -555,28 +536,11 @@ Recoge todos los logs de una serie de entradas para filtrarlos, modificarlos, a�
 #### Interfaz
 #### Indices
 #### Esquema
-#### Indexación
 #### Análisis
-#### Búsqueda
-### Persistencia a largo plazo
+### Indexación y búsqueda
 
-]
----
-# ElasticSearch
-.left-column[
-### ¿Qué es?
-## ¿Cómo funciona?
-]
-.right-column[
-
-#### Instalación
-#### Interfaz
-#### Indices
-#### Esquema
-#### Indexación
-#### Análisis
-#### Búsqueda
-#### Persistencia a largo plazo
-### Operación
+- Indexa documentos en masa con altas tasas de escritura
+- Las búsquedas pueden ser de diferentes tipos y filtradas
+- Incorpora uso de facetas y puntuación de relevancia en las búsquedas
 
 ]
