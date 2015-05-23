@@ -768,3 +768,17 @@ Algunos de estos componentes pueden estar en la misma maquina, pueden ser un mis
 
   - ####Generar cuadros de mando agrupando graficos y visualizaciones
 ]
+---
+# Instalación en Devex
+
+.left-column[
+]
+.right-column[
+]
+---
+# Instalación en Upptalk
+
+.left-column[
+]
+.right-column[
+]
