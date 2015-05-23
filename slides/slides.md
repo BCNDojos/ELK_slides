@@ -312,27 +312,11 @@ Es una aplicación JRuby de tratamiento de logs que permite
 - Parsear/Modificar
 - Enviar a un storage
 
+--
+Mediante el uso de plugins podemos trabajar con
 
-Mediante el uso de plugins podemos trabajar con distintos sistemas de envio de logs, varios tipos de procesado y modificación de logs, varias soluciones de almacenamiento de datos, análisis y visualización.
+- Distintos sistemas de envio de logs (RSyslog, RSyslog-NG, Logstash agent, Lumberjack, Logstash-forwareder...) 
+- Varios tipos de procesado y modificación de logs (parseado, mutacion, limpieza, añadido de campos/tags, geolocalizcion...)
+- Varias soluciones de almacenamiento/salida de datos:
 ]
----
-# Logstash
 
-.left-column[
-###¿Qué es Logstash?
-##¿Cómo funciona?
-]
-.right-column[
-
-]
----
-# Logstash
-
-.left-column[
-###¿Qué es Logstash?
-###¿Cómo funciona?
-##¿Qué hace?
-]
-.right-column[
-
-]
