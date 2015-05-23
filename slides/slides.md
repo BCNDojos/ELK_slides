@@ -433,7 +433,7 @@ Algunos de estos componentes pueden estar en la misma maquina, pueden ser un mis
 # Logstash
 
 .left-column[
-###¿Qué es Logstash?
+###¿Qué es?
 ##¿Como Funciona?
 ]
 .right-column[
