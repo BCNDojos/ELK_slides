@@ -291,11 +291,12 @@ layout: false
 ##¿Qué es Logstash?
 ]
 .right-column[
-Es una aplicación JRuby de tratamiento de logs que permite:
-	-Recolectar
-	-Centralizar
-	-Parsear/Modificar
-	-Enviar a un storage
+Es una aplicación JRuby de tratamiento de logs que permite
+
+- Recolectar
+- Centralizar
+- Parsear/Modificar
+- Enviar a un storage
 ]
 ---
 # Logstash
