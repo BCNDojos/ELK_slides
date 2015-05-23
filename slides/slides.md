@@ -493,3 +493,12 @@ Algunos de estos componentes pueden estar en la misma maquina, pueden ser un mis
 
  - Podemos definir una lógica que aplique filtros de salida para que según el tipo de datos o etiquetas que hayamos añadido estos se envien a distintos destinos y en distintos formatos
 ]
+---
+# Kibana
+
+.left-column[
+##¿Qué es?
+]
+.right-column[
+### Una aplicación NodeJS (v4) para visualización, creacion y gestión de las consultas que se hacen a Elasticsearch.
+]
