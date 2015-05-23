@@ -334,10 +334,10 @@ layout: false
 .right-column[
 ###Es una aplicación JRuby de tratamiento de logs que permite:
 
-####Recolectar
-####Centralizar
-####Parsear/Modificar
-####Enviar a un storage
+    ####Recolectar
+    ####Centralizar
+    ####Parsear/Modificar
+    ####Enviar a un storage
 
 ###Mediante el uso de plugins podemos trabajar con:
 
