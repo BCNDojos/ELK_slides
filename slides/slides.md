@@ -512,6 +512,7 @@ Algunos de estos componentes pueden estar en la misma maquina, pueden ser un mis
 .right-column[
 - ###Permite Navegar por los índices de Elasticsearch
 ]
+---
 # Kibana
 
 .left-column[
