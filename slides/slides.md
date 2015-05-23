@@ -411,7 +411,6 @@ layout: false
 	- Es el encargado de recoger todos los logs del broker o los agentes de logstash y aplicarles una logica definida por el usuario para modificarlos, parsearlos y enviar el resultado a una serie de salidas (Elasticsearch, Nagios, Mail, etc...)
 ]
 ---
----
 # Logstash
 
 .left-column[
