@@ -491,5 +491,5 @@ Algunos de estos componentes pueden estar en la misma maquina, pueden ser un mis
  
  - Se definen una serie de salidas (outputs) en el fichero de configuración
 
- - Podemos definir una lógica que aplique filtros de salida para que según el tipo de datos o etiquetas que hayamos añadido estos se envien distintos destinos y en distintos formatos
+ - Podemos definir una lógica que aplique filtros de salida para que según el tipo de datos o etiquetas que hayamos añadido estos se envien a distintos destinos y en distintos formatos
 ]
