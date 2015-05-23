@@ -439,9 +439,9 @@ Algunos de estos componentes pueden estar en la misma maquina, pueden ser un mis
 .right-column[
 ### Arquitectura del sistema Logstash
 
-####Shipper, Broker, Logstash Central
+- ####Shipper, Broker, Logstash Central
 
-- ###Recolección
+###Recolección
 
   Es la fase donde el agente recoge, etiqueta y reenvia los logs
 
@@ -459,11 +459,11 @@ Algunos de estos componentes pueden estar en la misma maquina, pueden ser un mis
 .right-column[
 ### Arquitectura del sistema Logstash
 
- ####Shipper, Broker, Logstash Central
+ - ####Shipper, Broker, Logstash Central
 
-- ###Recolección
+###Recolección
 
-- ###Tratamiento
+###Tratamiento
 
   Es la fase en que parseamos, modificamos, añadimos datos
 
@@ -479,13 +479,13 @@ Algunos de estos componentes pueden estar en la misma maquina, pueden ser un mis
 .right-column[
 ### Arquitectura del sistema Logstash
 
- ####Shipper, Broker, Logstash Central
+ - ####Shipper, Broker, Logstash Central
 
-- ###Recolección
+###Recolección
 
-- ###Tratamiento
+###Tratamiento
 
-- ###Envio  
+###Envio  
 
   Es la fase en que enviamos los datos procesados
  
