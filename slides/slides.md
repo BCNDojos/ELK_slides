@@ -291,7 +291,7 @@ layout: false
 ##¿Qué es Logstash?
 ]
 .right-column[
-Es una aplicación JRuby de tratamiento de logs que permite
+Es una aplicación JRuby de tratamiento de logs que permite:
 
 - Recolectar
 - Centralizar
@@ -305,15 +305,14 @@ Es una aplicación JRuby de tratamiento de logs que permite
 ##¿Qué es Logstash?
 ]
 .right-column[
-Es una aplicación JRuby de tratamiento de logs que permite
+Es una aplicación JRuby de tratamiento de logs que permite:
 
 - Recolectar
 - Centralizar
 - Parsear/Modificar
 - Enviar a un storage
 
---
-Mediante el uso de plugins podemos trabajar con
+Mediante el uso de plugins podemos trabajar con:
 
 - Distintos sistemas de envio de logs (RSyslog, RSyslog-NG, Logstash agent, Lumberjack, Logstash-forwareder...) 
 - Varios tipos de procesado y modificación de logs (parseado, mutacion, limpieza, añadido de campos/tags, geolocalizcion...)
