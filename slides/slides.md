@@ -772,8 +772,65 @@ Algunos de estos componentes pueden estar en la misma maquina, pueden ser un mis
 # Instalación en Devex
 
 .left-column[
+## Detalles
 ]
 .right-column[
+### Tres entornos: develop, master y producción
+
+]
+---
+# Instalación en Devex
+
+.left-column[
+## Detalles
+]
+.right-column[
+#### Tres entornos: develop, master y producción
+### Actualmente sólo instalado en develop y master
+
+]
+---
+# Instalación en Devex
+
+.left-column[
+### Detalles
+## Arquitectura
+]
+.right-column[
+### Logstash
+
+- Instalado en cada servidor de producción
+- Lee de varios ficheros: syslog, errores, acceso, aplicación, ...
+- Realiza el pre-tratamiento
+- Envía a un syslog y a un ElasticSearch
+- Para cada fichero y día utiliza índices distintos
+
+]
+---
+# Instalación en Devex
+
+.left-column[
+### Detalles
+## Arquitectura
+]
+.right-column[
+#### Logstash
+### ElasticSearch y Kibana
+
+- Un cluster con un sólo nodo
+- Kibana
+
+]
+---
+# Instalación en Devex
+
+.left-column[
+### Detalles
+### Arquitectura
+## Casos de uso
+]
+.right-column[
+
 ]
 ---
 # Instalación en Upptalk
