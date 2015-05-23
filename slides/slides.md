@@ -233,7 +233,7 @@ layout: false
 ### Elasticsearch
 ## Logstash
 
-- ####Recocopila registros de los eventos que se quieren registrar
+- ####Recopila registros de los eventos que se quieren registrar
 - ####Múltiple fuentes de tipos distintos
 - ####Preprocesado y normalización
 - ####Transporte hasta uno o más destinos finales
