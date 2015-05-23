@@ -314,7 +314,7 @@ Es una aplicación JRuby de tratamiento de logs que permite:
 
 Mediante el uso de plugins podemos trabajar con:
 
-- Distintos sistemas de envio de logs (RSyslog, RSyslog-NG, Logstash agent, Lumberjack, Logstash-forwareder...) 
+- Distintos sistemas de envio de logs (Syslogd, RSyslog, RSyslog-NG, Logstash agent, Lumberjack, Logstash-forwareder, Snare for Widnows, KiwiSyslog, Syslog-Win32, etc,etc...) 
 - Varios tipos de procesado y modificación de logs (parseado, mutacion, limpieza, añadido de campos/tags, geolocalizcion...)
 - Varias soluciones de almacenamiento/salida de datos:
 ]
