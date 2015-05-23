@@ -308,10 +308,6 @@ Recoge todos los logs de una serie de entradas para filtrarlos, modificarlos, a�
 - ####Sistema que recibe datos y los ordena
 - ####Basado en Apache Lucene
 - ####Los datos se almacenan en índices
-- ####Cada índice tiene :
-  + una configuración
-  + una definición
-  + un conjunto de plantillas
 - ####Los campos se pueden analizar de muchas formas
 
 ]
@@ -327,11 +323,7 @@ Recoge todos los logs de una serie de entradas para filtrarlos, modificarlos, a�
 
 - ####Los datos están organizados en documentos
 - ####Formato JSON
-- ####La carga de documentos es bastante eficiente
-- ####Se pueden cargar documentos en masa
-- ####Mantiene la copia original
-- ####Mantiene la cuenta de la versión de cada documento
-- ####Permite anidamiento de documentos
+- ####Mantiene la copia original y la versión de cada documento
 
 ]
 ---
@@ -345,10 +337,10 @@ Recoge todos los logs de una serie de entradas para filtrarlos, modificarlos, a�
 #### Orientado a documento
 ### Esquema dinámico
 
-- ####Los campos del documento no se definen previamente
+- ####La definición de la estructura de los documentos es opcional
+- ####Se pueden definir algunos o todos los campos de los documentos
 - ####La estructura de los documentos puede cambiar
 - ####Si un documento no contiene un campo solicitado, se muestra como no existente
-- ####Es opcional, se pueden definir algunos o todos los campos de los documentos
 
 ]
 ---
@@ -400,11 +392,11 @@ Recoge todos los logs de una serie de entradas para filtrarlos, modificarlos, a�
 #### API REST basada en JSON
 ### Funcionalidades analíticas
 
+- ####Estadísticas: Media, máximo, mínimo, suma, percentiles,...
 - ####Análisis de términos
 - ####Rangos numéricos, de fecha, de IP
 - ####Cálculo de distancias geográficas
 - ####Generación de histogramas
-- ####Estadísticas: Media, máximo, mínimo, suma, percentiles,...
 
 ]
 ---
@@ -435,6 +427,7 @@ Recoge todos los logs de una serie de entradas para filtrarlos, modificarlos, a�
 ## ¿Cómo funciona?
 ]
 .right-column[
+
 
 ]
 ---
