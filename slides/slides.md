@@ -764,7 +764,7 @@ Algunos de estos componentes pueden estar en la misma maquina, pueden ser un mis
 
   - #### Filtrar y agregar datos
 
-  - #### Generar representaciones gráficas de dichos datos (lineas, columnas, pastel, mapa,métrica, etc...)
+  - #### Generar representaciones gráficas de dichos datos (lineas, columnas, pastel, mapa, métrica, etc...)
 
   - #### Generar cuadros de mando agrupando graficos y visualizaciones
 
