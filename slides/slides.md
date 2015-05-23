@@ -296,7 +296,7 @@ layout: false
 - ####Recolectar
 - ####Centralizar
 - ####Parsear/Modificar
-- ####Enviar a un storage
+- ####Enviar a una salida
 ]
 ---
 # Logstash
@@ -306,7 +306,7 @@ layout: false
 ]
 .right-column[
 ###Es una aplicación JRuby de tratamiento de logs que permite:
-  - ####Recolectar, centralizar, parsear/modificar, enviar a un storage.
+  - ####Recolectar, centralizar, parsear/modificar, enviar a una salida.
 
 ###Mediante el uso de plugins podemos trabajar con:
 
@@ -329,7 +329,7 @@ layout: false
 ]
 .right-column[
 ###Es una aplicación JRuby de tratamiento de logs que permite:
-  - ####Recolectar, centralizar, parsear/modificar, enviar a un storage.
+  - ####Recolectar, centralizar, parsear/modificar, enviar a una salida.
 
 ###Mediante el uso de plugins podemos trabajar con:
 
@@ -352,7 +352,7 @@ layout: false
 ]
 .right-column[
 ###Es una aplicación JRuby de tratamiento de logs que permite:
-  - ####Recolectar, centralizar, parsear/modificar, enviar a un storage.
+  - ####Recolectar, centralizar, parsear/modificar, enviar a una salida.
 
 ###Mediante el uso de plugins podemos trabajar con:
 
