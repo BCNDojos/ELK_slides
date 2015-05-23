@@ -110,10 +110,10 @@ layout: false
 
 ## Syslog
 
+- ####Desarrollado por [Eric Allman](http://en.wikipedia.org/wiki/Eric_Allman) para [Sendmail](http://en.wikipedia.org/wiki/Sendmail)
 - ####**Estándar de facto**, definido en [RFC3164](https://www.ietf.org/rfc/rfc3164.txt)
 - ####**Diferentes implementaciones existentes** en la mayoría de sistemas UN*X
 - ####Comunicación por **protocolo UDP** (puerto 514)
-- ####Desarrollado por [Eric Allman](http://en.wikipedia.org/wiki/Eric_Allman) para [Sendmail](http://en.wikipedia.org/wiki/Sendmail)
 - ####Permite dos tipos de categorizaciones:
   + **Facility**: Indica el tipo de aplicación que hace el registro. Hay 24 tipos distintos.
   + **Severity**: Se refiere a la gravedad del evento registrado. Hay 8 tipos diferentes.
