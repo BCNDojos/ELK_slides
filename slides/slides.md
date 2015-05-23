@@ -234,7 +234,7 @@ layout: false
 ### Elasticsearch
 ## Logstash
 
-- ####Escrito en JRuby por James Turnbull
+- ####Escrito en JRuby por Jordan Sissel
 - ####Recopila registros de los eventos
 - ####Múltiples fuentes de tipos distintos
 - ####Preprocesado y normalización de los datos
@@ -306,9 +306,9 @@ Recoge todos los logs de una serie de entradas para filtrarlos, modificarlos, a�
 ### Motor de indexación
 
 - ####Sistema que recibe datos y los ordena
-- ####Basado en Apache Lucene
+- ####Basado en Apache Lucene, escrito en Java por Doug Cutting en 1999
 - ####Los datos se almacenan en índices
-- ####Los campos se pueden analizar de muchas formas
+- ####Se pueden realizar análisis de diferentes tipos
 
 ]
 ---
@@ -340,7 +340,7 @@ Recoge todos los logs de una serie de entradas para filtrarlos, modificarlos, a�
 - ####La definición de la estructura de los documentos es opcional
 - ####Se pueden definir algunos o todos los campos de los documentos
 - ####La estructura de los documentos puede cambiar
-- ####Si un documento no contiene un campo solicitado, se muestra como no existente
+- ####Si falta un campo solicitado, se muestra como no existente
 
 ]
 ---
@@ -355,8 +355,8 @@ Recoge todos los logs de una serie de entradas para filtrarlos, modificarlos, a�
 #### Esquema dinámico
 ### Motor de búsqueda
 
-- ####Permite realizar búsquedas sobre los datos indexados
-- ####Permite definir filtros sobre las búsquedas para restringirlas
+- ####Realizar búsquedas sobre los datos indexados
+- ####Uso de filtros sobre las búsquedas
 - ####Parametrización sobre los datos, sus estadísticas, ...
 - ####Permite obtener facetas de las búsquedas
 
@@ -374,7 +374,7 @@ Recoge todos los logs de una serie de entradas para filtrarlos, modificarlos, a�
 #### Motor de búsqueda
 ### API REST basada en JSON
 
-- ####La comunicación se realiza mediante una API REST
+- ####La comunicación se realiza mediante una API REST HTTP
 - ####Los mensajes, tanto de petición como de respuesta, son JSON
 
 ]
@@ -428,15 +428,155 @@ Recoge todos los logs de una serie de entradas para filtrarlos, modificarlos, a�
 ]
 .right-column[
 
+### Instalación
+
+- Descargar de ElasticSearch (Comprimido o empaquetado)
+- Único requerimiento: Java (versión reciente)
+- 1 fichero de configuración = 1 proceso = 1 nodo
+- Nodos agrupados en un *cluster* definido por nombre
+- Uno de los nodos se comporta como maestro
+- El maestro es elegido y promovido dinámicamente
+- Un nuevo nodo descubre a los otros del *cluster* automáticamente
 
 ]
 ---
 # ElasticSearch
 .left-column[
 ### ¿Qué es?
-### ¿Cómo funciona?
-## ¿Qué hace?
+## ¿Cómo funciona?
 ]
 .right-column[
+
+#### Instalación
+### Interfaz
+
+- La interfaz es una API REST HTTP basada en JSON
+- Los comandos HTTP definen el tipo de acción (GET, PUT, ...)
+- La operación a ejecutar se determina por la URL solicitada
+- La información enviada, en formato JSON, en el cuerpo de la petición
+
+]
+---
+# ElasticSearch
+.left-column[
+### ¿Qué es?
+## ¿Cómo funciona?
+]
+.right-column[
+
+#### Instalación
+#### Interfaz
+### Indices
+
+- Los índices se dividen físicamente en *primary shards*, por defecto 5
+- Cada documento se escribe en un sólo *primary shard*
+- La cantidad de documentos escala con la cantidad de *primary shards*
+- Cada *primary shard* puede tener 0 o más réplicas
+- La cantidad de réplicas escalará la disponibilidad y rendimiento
+- Los índices se dividen lógicamente en tipos
+
+]
+---
+# ElasticSearch
+.left-column[
+### ¿Qué es?
+## ¿Cómo funciona?
+]
+.right-column[
+
+#### Instalación
+#### Interfaz
+#### Indices
+### Esquema
+
+- Es opcional
+- ElasticSearch adivinará los tipos de datos, con cierto margen de error
+- El esquema se define con *mappings*
+- Se definen propiedades para cada campo del documento
+
+]
+---
+# ElasticSearch
+.left-column[
+### ¿Qué es?
+## ¿Cómo funciona?
+]
+.right-column[
+
+#### Instalación
+#### Interfaz
+#### Indices
+#### Esquema
+### Indexación
+
+]
+---
+# ElasticSearch
+.left-column[
+### ¿Qué es?
+## ¿Cómo funciona?
+]
+.right-column[
+
+#### Instalación
+#### Interfaz
+#### Indices
+#### Esquema
+#### Indexación
+### Análisis
+
+]
+---
+# ElasticSearch
+.left-column[
+### ¿Qué es?
+## ¿Cómo funciona?
+]
+.right-column[
+
+#### Instalación
+#### Interfaz
+#### Indices
+#### Esquema
+#### Indexación
+#### Análisis
+### Búsqueda
+
+]
+---
+# ElasticSearch
+.left-column[
+### ¿Qué es?
+## ¿Cómo funciona?
+]
+.right-column[
+
+#### Instalación
+#### Interfaz
+#### Indices
+#### Esquema
+#### Indexación
+#### Análisis
+#### Búsqueda
+### Persistencia a largo plazo
+
+]
+---
+# ElasticSearch
+.left-column[
+### ¿Qué es?
+## ¿Cómo funciona?
+]
+.right-column[
+
+#### Instalación
+#### Interfaz
+#### Indices
+#### Esquema
+#### Indexación
+#### Análisis
+#### Búsqueda
+#### Persistencia a largo plazo
+### Operación
 
 ]
