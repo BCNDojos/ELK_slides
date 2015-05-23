@@ -212,6 +212,7 @@ layout: false
 
 ## Elasticsearch
 
+- ####Escrito en Java por Shay Banon
 - ####Motor de indexación y búsqueda orientado a documento
 - ####Escrito en Java
 - ####API REST basada en JSON
@@ -233,12 +234,12 @@ layout: false
 ### Elasticsearch
 ## Logstash
 
-- ####Recopila registros de los eventos que se quieren registrar
-- ####Múltiple fuentes de tipos distintos
-- ####Preprocesado y normalización
+- ####Escrito en JRuby por James Turnbull
+- ####Recopila registros de los eventos
+- ####Múltiples fuentes de tipos distintos
+- ####Preprocesado y normalización de los datos
 - ####Transporte hasta uno o más destinos finales
 - ####Capacidad de encaminamiento
-- ####Escrito en JRuby
 - ####Entradas, salidas, codecs y filtros ampliables mediante plugins
 
 ]
