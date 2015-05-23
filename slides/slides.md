@@ -740,3 +740,31 @@ Algunos de estos componentes pueden estar en la misma maquina, pueden ser un mis
 - Incorpora uso de facetas y puntuación de relevancia en las búsquedas
 
 ]
+---
+# Kibana
+
+.left-column[
+##¿Qué es?
+]
+.right-column[
+
+### Una aplicación NodeJS (v4) para visualización, creacion y gestión de las consultas que se hacen a Elasticsearch.
+]
+---
+# Kibana
+
+.left-column[
+###¿Qué es?
+##¿Qué hace?
+]
+.right-column[
+###Ofrece una interfaz gráfica para:
+
+  - ####Consultar y visualizar eventos de log
+
+  - ####Filtrar y agregar datos
+
+  - ####Generar representaciones gráficas de dichos datos (lineas, columnas, pastel, mapa,etc...)
+
+  - ####Generar cuadros de mando agrupando graficos y visualizaciones
+]
