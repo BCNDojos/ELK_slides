@@ -42,10 +42,10 @@ layout: false
 
 ## Recolectar registros
 
-- ####Desde distintos orígenes: ficheros, flujos, sistema, ...
-- ####Pre-tratamiento
-- ####Clasificación inicial
-- ####Encaminamiento a distintos destinos
+- #### Desde distintos orígenes: ficheros, flujos, sistema, ...
+- #### Pre-tratamiento
+- #### Clasificación inicial
+- #### Encaminamiento a distintos destinos
 
 ]
 ---
@@ -58,11 +58,11 @@ layout: false
 ### Recolectar registros
 ## Tratamiento de los datos
 
-- ####Extracción de datos
-- ####Transformación de tipos
-- ####Etiquetado de los registros
-- ####Creación de nuevos datos según otros presentes
-- ####Uso de expresiones regulares para el *parsing*
+- #### Extracción de datos
+- #### Transformación de tipos
+- #### Etiquetado de los registros
+- #### Creación de nuevos datos según otros presentes
+- #### Uso de expresiones regulares para el *parsing*
 
 ]
 ---
@@ -76,10 +76,10 @@ layout: false
 ### Tratamiento de los datos
 ## Análisis
 
-- ####Indexación para búsquedas
-- ####Agregación
-- ####Clasificación
-- ####Correlación
+- #### Indexación para búsquedas
+- #### Agregación
+- #### Clasificación
+- #### Correlación
 
 ]
 ---
@@ -94,10 +94,10 @@ layout: false
 ### Análisis
 ## Visualización
 
-- ####Búsqueda
-- ####Selección
-- ####Vista en directo
-- ####Crear gráficas
+- #### Búsqueda
+- #### Selección
+- #### Vista en directo
+- #### Crear gráficas
 
 ]
 ---
@@ -110,13 +110,13 @@ layout: false
 
 ## Syslog
 
-- ####Desarrollado por [Eric Allman](http://en.wikipedia.org/wiki/Eric_Allman) para [Sendmail](http://en.wikipedia.org/wiki/Sendmail)
-- ####**Estándar de facto**, definido en [RFC3164](https://www.ietf.org/rfc/rfc3164.txt)
-- ####**Diferentes implementaciones existentes** en la mayoría de sistemas
-- ####Permite dos tipos de categorizaciones:
+- #### Desarrollado por [Eric Allman](http://en.wikipedia.org/wiki/Eric_Allman) para [Sendmail](http://en.wikipedia.org/wiki/Sendmail)
+- #### **Estándar de facto**, definido en [RFC3164](https://www.ietf.org/rfc/rfc3164.txt)
+- #### **Diferentes implementaciones existentes** en la mayoría de sistemas
+- #### Permite dos tipos de categorizaciones:
   + **Facility**: Indica el tipo de aplicación que hace el registro. Hay 24 tipos distintos.
   + **Severity**: Se refiere a la gravedad del evento registrado. Hay 8 tipos diferentes.
-- ####Observaciones:
+- #### Observaciones:
   + **Baja confiabilidad**: El protocolo UDP permite pérdida y no garantiza el orden de los mensajes.
   + **Falta de herramientas**: No incluye herramientas de análisis ni tratamiento.
   + **Falta de mecanismos de autenticación**: No hay mecanismos de autenticación en ningún sentido.
@@ -133,13 +133,13 @@ layout: false
 ### Syslog
 ## [Fluentd](http://www.fluentd.org/)
 
-- ####**Colector de logs**
-- ####Permite distintos orígenes y destinos
-- ####Incluye la posibilidad de filtrar, regular y dirigir mensajes
-- ####Internamente, convierte los mensajes en documentos JSON
-- ####Tiene posibilidad de conectar *plugins*
-- ####Hecho en C y Ruby
-- ####Observaciones:
+- #### **Colector de logs**
+- #### Permite distintos orígenes y destinos
+- #### Incluye la posibilidad de filtrar, regular y dirigir mensajes
+- #### Internamente, convierte los mensajes en documentos JSON
+- #### Tiene posibilidad de conectar *plugins*
+- #### Hecho en C y Ruby
+- #### Observaciones:
   + **Poco conocido**: Aunque es relativamente conocido en la comunidad Ruby, no lo es mucho fuera de ella.
   + **Sustituto de Logstash**: Existe algo de información sobre cómo pasar de ELK a EFK.
 
@@ -156,9 +156,9 @@ layout: false
 ### [Fluentd](http://www.fluentd.org/)
 ## [Flume](https://flume.apache.org/)
 
-- ####Otro **colector de logs**, pero distribuido
-- ####Envía los logs a Hadoop
-- ####Observaciones:
+- #### Otro **colector de logs**, pero distribuido
+- #### Envía los logs a Hadoop
+- #### Observaciones:
   + **Poco conocido**: Aún menos conocido que Fluentd, posiblemente más reconocido en entornos con Hadoop
 
 ]
@@ -175,9 +175,9 @@ layout: false
 ### [Flume](https://flume.apache.org/)
 ## [Splunk](http://www.splunk.com/)
 
-- ####Plataforma similar a ELK, pero bastante anterior
-- ####Sólo tiene licencia comercial
-- ####Observaciones:
+- #### Plataforma similar a ELK, pero bastante anterior
+- #### Sólo tiene licencia comercial
+- #### Observaciones:
   + **Conocimiento**: Aunque es bastante conocido, no parece que haya muchos usuarios
 
 ]
@@ -195,10 +195,10 @@ layout: false
 ## [Splunk](http://www.splunk.com/)
 ## [Loggly](https://www.loggly.com/), [Papertrail](https://papertrailapp.com/), [Logentries](https://logentries.com/), [Sentry](https://getsentry.com/welcome/)
 
-- ####Servicios en línea
-- ####Tráfico máximo y retención limitados y relativos al precio
-- ####Información sensible en sistemas externos
-- ####Algunos casos requieren tener agentes o enviar desde la aplicación directamente
+- #### Servicios en línea
+- #### Tráfico máximo y retención limitados y relativos al precio
+- #### Información sensible en sistemas externos
+- #### Algunos casos requieren tener agentes o enviar desde la aplicación directamente
 
 ]
 ---
@@ -212,14 +212,14 @@ layout: false
 
 ## [Elasticsearch](https://www.elastic.co/products/elasticsearch)
 
-- ####Escrito en Java por [Shay Banon](https://twitter.com/kimchy)
-- ####Motor de indexación y búsqueda orientado a documento
-- ####Escrito en Java
-- ####API REST basada en JSON
-- ####Funcionalidades analíticas
-- ####Sin esquema
-- ####Uso de *plugins* para ampliar funcionalidades
-- ####Disponibilidad
+- #### Escrito en Java por [Shay Banon](https://twitter.com/kimchy)
+- #### Motor de indexación y búsqueda orientado a documento
+- #### Escrito en Java
+- #### API REST basada en JSON
+- #### Funcionalidades analíticas
+- #### Sin esquema
+- #### Uso de *plugins* para ampliar funcionalidades
+- #### Disponibilidad
 
 ]
 ---
@@ -234,13 +234,13 @@ layout: false
 ### [Elasticsearch](https://www.elastic.co/products/elasticsearch)
 ## [Logstash](https://www.elastic.co/products/logstash)
 
-- ####Escrito en JRuby por [Jordan Sissel](https://twitter.com/jordansissel)
-- ####Recopila registros de los eventos
-- ####Múltiples fuentes de tipos distintos
-- ####Pre-procesado y normalización de los datos
-- ####Transporte hasta uno o más destinos finales
-- ####Capacidad de encaminamiento
-- ####Entradas, salidas, *codecs* y filtros ampliables mediante *plugins*
+- #### Escrito en JRuby por [Jordan Sissel](https://twitter.com/jordansissel)
+- #### Recopila registros de los eventos
+- #### Múltiples fuentes de tipos distintos
+- #### Pre-procesado y normalización de los datos
+- #### Transporte hasta uno o más destinos finales
+- #### Capacidad de encaminamiento
+- #### Entradas, salidas, *codecs* y filtros ampliables mediante *plugins*
 
 ]
 ---
@@ -256,12 +256,12 @@ layout: false
 ### [Logstash](https://www.elastic.co/products/logstash)
 ## [Kibana](https://www.elastic.co/products/kibana)
 
-- ####Escrito en NodeJS
-- ####Panel de control para búsquedas y análisis sobre ElasticSearch
-- ####Muy sencillo
-- ####Democratización del acceso a los datos
-- ####Permite generar histogramas, análisis de términos, mapas, tablas,...
-- ####Muy simple y bastante eficiente
+- #### Escrito en NodeJS
+- #### Panel de control para búsquedas y análisis sobre ElasticSearch
+- #### Muy sencillo
+- #### Democratización del acceso a los datos
+- #### Permite generar histogramas, análisis de términos, mapas, tablas,...
+- #### Muy simple y bastante eficiente
 
 ]
 ---
@@ -287,29 +287,29 @@ layout: false
 ---
 # Logstash
 .left-column[
-##¿Qué es?
+## ¿Qué es?
 ]
 .right-column[
-###Es una aplicación JRuby de tratamiento de logs que permite:
+### Es una aplicación JRuby de tratamiento de logs que permite:
 
-- ####Recolectar
-- ####Centralizar
-- ####Parsear/Modificar
-- ####Enviar a una salida
+- #### Recolectar
+- #### Centralizar
+- #### Parsear/Modificar
+- #### Enviar a una salida
 ]
 ---
 # Logstash
 
 .left-column[
-##¿Qué es?
+## ¿Qué es?
 ]
 .right-column[
-###Es una aplicación JRuby de tratamiento de logs que permite:
-  - ####Recolectar, centralizar, parsear/modificar, enviar a una salida.
+### Es una aplicación JRuby de tratamiento de logs que permite:
+  - #### Recolectar, centralizar, parsear/modificar, enviar a una salida.
 
-###Mediante el uso de plugins podemos trabajar con:
+### Mediante el uso de plugins podemos trabajar con:
 
-- ####Distintos sistemas de envio de logs 
+- #### Distintos sistemas de envio de logs 
 	- Syslogd
 	- RSyslog 
 	- RSyslog-NG
@@ -324,17 +324,17 @@ layout: false
 # Logstash
 
 .left-column[
-##¿Qué es?
+## ¿Qué es?
 ]
 .right-column[
-###Es una aplicación JRuby de tratamiento de logs que permite:
-  - ####Recolectar, centralizar, parsear/modificar, enviar a una salida.
+### Es una aplicación JRuby de tratamiento de logs que permite:
+  - #### Recolectar, centralizar, parsear/modificar, enviar a una salida.
 
-###Mediante el uso de plugins podemos trabajar con:
+### Mediante el uso de plugins podemos trabajar con:
 
-- ####Distintos sistemas de envio de logs 
+- #### Distintos sistemas de envio de logs 
 
-- ####Varios tipos de procesado y modificacion de logs
+- #### Varios tipos de procesado y modificacion de logs
 	- Parseado
 	- Mutación
 	- Limpieza
@@ -347,19 +347,19 @@ layout: false
 # Logstash
 
 .left-column[
-##¿Qué es?
+## ¿Qué es?
 ]
 .right-column[
-###Es una aplicación JRuby de tratamiento de logs que permite:
-  - ####Recolectar, centralizar, parsear/modificar, enviar a una salida.
+### Es una aplicación JRuby de tratamiento de logs que permite:
+  - #### Recolectar, centralizar, parsear/modificar, enviar a una salida.
 
-###Mediante el uso de plugins podemos trabajar con:
+### Mediante el uso de plugins podemos trabajar con:
 
-- ####Distintos sistemas de envio de logs 
+- #### Distintos sistemas de envio de logs 
 
-- ####Varios tipos de procesado y modificacion de logs
+- #### Varios tipos de procesado y modificacion de logs
 
-- ####Varias soluciones de almacenamiento/salida de datos
+- #### Varias soluciones de almacenamiento/salida de datos
 	- Almacenamiendo en Elasticsearch
 	- Envio de mails según lógica y filtros preestablecidos
 	- Envio de mensajes a través xmpp
@@ -370,8 +370,8 @@ layout: false
 # Logstash
 
 .left-column[
-###¿Qué es?
-##¿Cómo Funciona?
+### ¿Qué es?
+## ¿Cómo Funciona?
 ]
 .right-column[
 ### Arquitectura del sistema Logstash
@@ -382,8 +382,8 @@ layout: false
 # Logstash
 
 .left-column[
-###¿Qué es?
-##¿Cómo Funciona?
+### ¿Qué es?
+## ¿Cómo Funciona?
 ]
 .right-column[
 ### Arquitectura del sistema Logstash
@@ -396,8 +396,8 @@ layout: false
 # Logstash
 
 .left-column[
-###¿Qué es?
-##¿Cómo Funciona?
+### ¿Qué es?
+## ¿Cómo Funciona?
 ]
 .right-column[
 ### Arquitectura del sistema Logstash
@@ -413,8 +413,8 @@ layout: false
 # Logstash
 
 .left-column[
-###¿Qué es?
-##¿Cómo Funciona?
+### ¿Qué es?
+## ¿Cómo Funciona?
 ]
 .right-column[
 ### Arquitectura del sistema Logstash
@@ -432,15 +432,15 @@ Algunos de estos componentes pueden estar en la misma maquina, pueden ser un mis
 # Logstash
 
 .left-column[
-###¿Qué es?
-##¿Cómo Funciona?
+### ¿Qué es?
+## ¿Cómo Funciona?
 ]
 .right-column[
 ### Arquitectura del sistema Logstash
 
-- ####Shipper, Broker, Logstash Central
+- #### Shipper, Broker, Logstash Central
 
-###Recolección
+### Recolección
 
   Es la fase donde el agente recoge, etiqueta y reenvia los logs
 
@@ -452,17 +452,17 @@ Algunos de estos componentes pueden estar en la misma maquina, pueden ser un mis
 # Logstash
 
 .left-column[
-###¿Qué es?
-##¿Cómo Funciona?
+### ¿Qué es?
+## ¿Cómo Funciona?
 ]
 .right-column[
 ### Arquitectura del sistema Logstash
 
- - ####Shipper, Broker, Logstash Central
+ - #### Shipper, Broker, Logstash Central
 
-###Recolección
+### Recolección
 
-###Tratamiento
+### Tratamiento
 
   Es la fase en que parseamos, modificamos, añadimos datos
 
@@ -472,19 +472,19 @@ Algunos de estos componentes pueden estar en la misma maquina, pueden ser un mis
 # Logstash
 
 .left-column[
-###¿Qué es?
-##¿Cómo Funciona?
+### ¿Qué es?
+## ¿Cómo Funciona?
 ]
 .right-column[
 ### Arquitectura del sistema Logstash
 
- - ####Shipper, Broker, Logstash Central
+ - #### Shipper, Broker, Logstash Central
 
-###Recolección
+### Recolección
 
-###Tratamiento
+### Tratamiento
 
-###Envio  
+### Envio  
 
   Es la fase en que enviamos los datos procesados
  
@@ -501,10 +501,10 @@ Algunos de estos componentes pueden estar en la misma maquina, pueden ser un mis
 
 ### Motor de indexación
 
-- ####Sistema que recibe datos y los ordena
-- ####Basado en [Apache Lucene](https://lucene.apache.org/core/), escrito en Java por [Doug Cutting](https://twitter.com/cutting) en 1999
-- ####Los datos se almacenan en índices
-- ####Se pueden realizar análisis de diferentes tipos
+- #### Sistema que recibe datos y los ordena
+- #### Basado en [Apache Lucene](https://lucene.apache.org/core/), escrito en Java por [Doug Cutting](https://twitter.com/cutting) en 1999
+- #### Los datos se almacenan en índices
+- #### Se pueden realizar análisis de diferentes tipos
 
 ]
 ---
@@ -517,9 +517,9 @@ Algunos de estos componentes pueden estar en la misma maquina, pueden ser un mis
 #### Motor de indexación
 ### Orientado a documento
 
-- ####Los datos están organizados en documentos
-- ####Formato JSON
-- ####Mantiene la copia original y la versión de cada documento
+- #### Los datos están organizados en documentos
+- #### Formato JSON
+- #### Mantiene la copia original y la versión de cada documento
 
 ]
 ---
@@ -533,10 +533,10 @@ Algunos de estos componentes pueden estar en la misma maquina, pueden ser un mis
 #### Orientado a documento
 ### Esquema dinámico
 
-- ####La definición de la estructura de los documentos es opcional
-- ####Se pueden definir algunos o todos los campos de los documentos
-- ####La estructura de los documentos puede cambiar
-- ####Si falta un campo solicitado, se muestra como no existente
+- #### La definición de la estructura de los documentos es opcional
+- #### Se pueden definir algunos o todos los campos de los documentos
+- #### La estructura de los documentos puede cambiar
+- #### Si falta un campo solicitado, se muestra como no existente
 
 ]
 ---
@@ -551,10 +551,10 @@ Algunos de estos componentes pueden estar en la misma maquina, pueden ser un mis
 #### Esquema dinámico
 ### Motor de búsqueda
 
-- ####Realizar búsquedas sobre los datos indexados
-- ####Uso de filtros sobre las búsquedas
-- ####Uso de parámetros sobre los datos, sus estadísticas, ...
-- ####Permite obtener facetas de las búsquedas
+- #### Realizar búsquedas sobre los datos indexados
+- #### Uso de filtros sobre las búsquedas
+- #### Uso de parámetros sobre los datos, sus estadísticas, ...
+- #### Permite obtener facetas de las búsquedas
 
 ]
 ---
@@ -570,8 +570,8 @@ Algunos de estos componentes pueden estar en la misma maquina, pueden ser un mis
 #### Motor de búsqueda
 ### API REST basada en JSON
 
-- ####La comunicación se realiza mediante una API REST HTTP
-- ####Los mensajes, tanto de petición como de respuesta, son JSON
+- #### La comunicación se realiza mediante una API REST HTTP
+- #### Los mensajes, tanto de petición como de respuesta, son JSON
 
 ]
 ---
@@ -588,11 +588,11 @@ Algunos de estos componentes pueden estar en la misma maquina, pueden ser un mis
 #### API REST basada en JSON
 ### Funcionalidades analíticas
 
-- ####Estadísticas: Media, máximo, mínimo, suma, percentiles,...
-- ####Análisis de términos
-- ####Rangos numéricos, de fecha, de IP
-- ####Cálculo de distancias geográficas
-- ####Generación de histogramas
+- #### Estadísticas: Media, máximo, mínimo, suma, percentiles,...
+- #### Análisis de términos
+- #### Rangos numéricos, de fecha, de IP
+- #### Cálculo de distancias geográficas
+- #### Generación de histogramas
 
 ]
 ---
@@ -610,10 +610,10 @@ Algunos de estos componentes pueden estar en la misma maquina, pueden ser un mis
 #### Funcionalidades analíticas
 ### Disponibilidad
 
-- ####Distribuido entre varios nodos
-- ####Permite descubrimiento de nodos
-- ####Realiza *sharding* entre los nodos de forma automática
-- ####Distribuye la carga de las consultas entre los nodos presentes
+- #### Distribuido entre varios nodos
+- #### Permite descubrimiento de nodos
+- #### Realiza *sharding* entre los nodos de forma automática
+- #### Distribuye la carga de las consultas entre los nodos presentes
 
 ]
 ---
@@ -744,7 +744,7 @@ Algunos de estos componentes pueden estar en la misma maquina, pueden ser un mis
 # Kibana
 
 .left-column[
-##¿Qué es?
+## ¿Qué es?
 ]
 .right-column[
 
@@ -754,21 +754,21 @@ Algunos de estos componentes pueden estar en la misma maquina, pueden ser un mis
 # Kibana
 
 .left-column[
-###¿Qué es?
-##¿Qué hace?
+### ¿Qué es?
+## ¿Qué hace?
 ]
 .right-column[
-###Ofrece una interfaz gráfica para:
+### Ofrece una interfaz gráfica para:
 
-  - ####Consultar y visualizar eventos de log
+  - #### Consultar y visualizar eventos de log
 
-  - ####Filtrar y agregar datos
+  - #### Filtrar y agregar datos
 
-  - ####Generar representaciones gráficas de dichos datos (lineas, columnas, pastel, mapa,métrica, etc...)
+  - #### Generar representaciones gráficas de dichos datos (lineas, columnas, pastel, mapa, métrica, etc...)
 
-  - ####Generar cuadros de mando agrupando graficos y visualizaciones
+  - #### Generar cuadros de mando agrupando graficos y visualizaciones
 
-  - ####Exportación de datos en formato CSV
+  - #### Exportación de datos en formato CSV
 ]
 ---
 # Instalación en [Devex](https://www.devex.com/)
