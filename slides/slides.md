@@ -501,7 +501,7 @@ Algunos de estos componentes pueden estar en la misma maquina, pueden ser un mis
 ]
 .right-column[
 
-### Una aplicación NodeJS (v4) para visualización, creacion y gestión de las consultas que se hacen a Elasticsearch.
+### Una aplicación NodeJS (v4) para visualización, creacion y gestión de las consultas que se lanzan contra Elasticsearch.
 ]
 ---
 # Kibana
@@ -517,7 +517,7 @@ Algunos de estos componentes pueden estar en la misma maquina, pueden ser un mis
 
   - ####Filtrar y agregar datos
 
-  - ####Generar representaciones gráficas de dichos datos (lineas, columnas, pastel, mapa,etc...)
+  - ####Generar representaciones gráficas de dichos datos (lineas, columnas, pastel, mapa,métrica, etc...)
 
   - ####Generar cuadros de mando agrupando graficos y visualizaciones
 ]
