@@ -339,6 +339,7 @@ layout: false
 	- Limpieza
 	- Añadido de campos
 	- Geolocalización
+	- Deduplicación de eventos
 	- ...
 ]
 ---
@@ -362,4 +363,14 @@ layout: false
 	- Envio de mensajes a través xmpp
 	- Envio de alertas a Nagios
 	- Creación de metricas usando StatsD
+]
+---
+# Logstash
+
+.left-column[
+###¿Qué es Logstash?
+##¿Como Funciona?
+]
+.right-column[
+- ###Blablablabla
 ]
