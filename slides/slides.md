@@ -303,7 +303,7 @@ Recoge todos los logs de una serie de entradas para filtrarlos, modificarlos, a�
 ]
 .right-column[
 
-## Motor de indexación
+### Motor de indexación
 
 - ####Sistema que recibe datos y los ordena
 - ####Basado en Apache Lucene
@@ -322,8 +322,8 @@ Recoge todos los logs de una serie de entradas para filtrarlos, modificarlos, a�
 ]
 .right-column[
 
-### Motor de indexación
-## Orientado a documento
+#### Motor de indexación
+### Orientado a documento
 
 - ####Los datos están organizados en documentos
 - ####Formato JSON
@@ -341,9 +341,9 @@ Recoge todos los logs de una serie de entradas para filtrarlos, modificarlos, a�
 ]
 .right-column[
 
-### Motor de indexación
-### Orientado a documento
-## Esquema dinámico
+#### Motor de indexación
+#### Orientado a documento
+### Esquema dinámico
 
 - ####Los campos del documento no se definen previamente
 - ####La estructura de los documentos puede cambiar
@@ -358,10 +358,10 @@ Recoge todos los logs de una serie de entradas para filtrarlos, modificarlos, a�
 ]
 .right-column[
 
-### Motor de indexación
-### Orientado a documento
-### Esquema dinámico
-## Motor de búsqueda
+#### Motor de indexación
+#### Orientado a documento
+#### Esquema dinámico
+### Motor de búsqueda
 
 - ####Permite realizar búsquedas sobre los datos indexados
 - ####Permite definir filtros sobre las búsquedas para restringirlas
@@ -376,11 +376,11 @@ Recoge todos los logs de una serie de entradas para filtrarlos, modificarlos, a�
 ]
 .right-column[
 
-### Motor de indexación
-### Orientado a documento
-### Esquema dinámico
-### Motor de búsqueda
-## API REST basada en JSON
+#### Motor de indexación
+#### Orientado a documento
+#### Esquema dinámico
+#### Motor de búsqueda
+### API REST basada en JSON
 
 - ####La comunicación se realiza mediante una API REST
 - ####Los mensajes, tanto de petición como de respuesta, son JSON
@@ -393,12 +393,12 @@ Recoge todos los logs de una serie de entradas para filtrarlos, modificarlos, a�
 ]
 .right-column[
 
-### Motor de indexación
-### Orientado a documento
-### Esquema dinámico
-### Motor de búsqueda
-### API REST basada en JSON
-## Funcionalidades analíticas
+#### Motor de indexación
+#### Orientado a documento
+#### Esquema dinámico
+#### Motor de búsqueda
+#### API REST basada en JSON
+### Funcionalidades analíticas
 
 - ####Análisis de términos
 - ####Rangos numéricos, de fecha, de IP
@@ -414,13 +414,13 @@ Recoge todos los logs de una serie de entradas para filtrarlos, modificarlos, a�
 ]
 .right-column[
 
-### Motor de indexación
-### Orientado a documento
-### Esquema dinámico
-### Motor de búsqueda
-### API REST basada en JSON
-### Funcionalidades analíticas
-## Disponibilidad
+#### Motor de indexación
+#### Orientado a documento
+#### Esquema dinámico
+#### Motor de búsqueda
+#### API REST basada en JSON
+#### Funcionalidades analíticas
+### Disponibilidad
 
 - ####Distribuido entre varios nodos
 - ####Permite descubrimiento de nodos
