@@ -350,6 +350,7 @@ Mediante el uso de plugins podemos trabajar con:
 	- Añadido de campos
 	- Geolocalización
 	- ...
+]
 ---
 # Logstash
 
