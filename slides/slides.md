@@ -443,7 +443,11 @@ Algunos de estos componentes pueden estar en la misma maquina, pueden ser un mis
 
 ### Recolección
 
-  Es la fase donde el agente recoje y etiqueta los logs
+  Es la fase donde el agente recoje, etiqueta y reenvia los logs
 
-  - Se definen una serie de entradas (inputs) en el fichero de configuración que pueden ser logs, mensajes de alguna aplicación 
+  - Se definen una serie de entradas (inputs) en el fichero de configuración
+
+  - Se aplican una serie de etiquetas a fin de que posteriormente sea mas sencillo para el Logstash Central el aplicar la lógica y fitros deseados
+
+  - Se envian los datos al broker o logstash central para su posterior procesado
 ]
