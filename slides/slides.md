@@ -439,7 +439,7 @@ Algunos de estos componentes pueden estar en la misma maquina, pueden ser un mis
 .right-column[
 ### Arquitectura del sistema Logstash
 
-  - ####Shipper, Broker, Logstash Central
+####Shipper, Broker, Logstash Central
 
 - ###Recolección
 
