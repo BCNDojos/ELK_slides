@@ -500,6 +500,7 @@ Algunos de estos componentes pueden estar en la misma maquina, pueden ser un mis
 ##¿Qué es?
 ]
 .right-column[
+
 ### Una aplicación NodeJS (v4) para visualización, creacion y gestión de las consultas que se hacen a Elasticsearch.
 ]
 ---
@@ -510,11 +511,11 @@ Algunos de estos componentes pueden estar en la misma maquina, pueden ser un mis
 ##¿Qué hace?
 ]
 .right-column[
-- ###Ofrece una interfaz gráfica para:
+###Ofrece una interfaz gráfica para:
 
-  - ####Consultar y visualizar eventos de log.
+  - ####Consultar y visualizar eventos de log
 
-  - ####Filtrar y agregar datos.
+  - ####Filtrar y agregar datos
 
   - ####Generar representaciones gráficas de dichos datos (lineas, columnas, pastel, mapa,etc...)
 
