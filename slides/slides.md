@@ -1053,13 +1053,4 @@ background-size: contain;
 <br/>
 <br/>
 <br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
 .left[[http://remarks.sinaapp.com/repo/BCNDojos/ELK_slides/slides/](http://remarks.sinaapp.com/repo/BCNDojos/ELK_slides/slides/#1)]
