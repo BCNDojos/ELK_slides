@@ -1028,4 +1028,4 @@ background-size: contain;
 background-image: url(http://cdn.meme.am/instances/500x/58052239.jpg)
 background-size: contain;
 # Muchas gracias
-[http://remarks.sinaapp.com/repo/BCNDojos/ELK_slides/slides/] (http://remarks.sinaapp.com/repo/BCNDojos/ELK_slides/slides/#1)
+[http://remarks.sinaapp.com/repo/BCNDojos/ELK_slides/slides/](http://remarks.sinaapp.com/repo/BCNDojos/ELK_slides/slides/#1)
