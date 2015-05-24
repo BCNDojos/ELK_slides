@@ -33,7 +33,7 @@ background-image: url(http://upload.wikimedia.org/wikipedia/commons/c/c7/Logs.jp
 ## - Josep Pla ([@joseppla74](https://twitter.com/joseppla74)): Ingeniero de sistemas en [Upptalk](http://upptalk.com/)
 ## - Ignasi Fosch ([@ifosch](https://twitter.com/ifosch)): Ingeniero de sistemas en [Devex](https://www.devex.com/)
 ---
-background-image: url(http://upload.wikimedia.org/wikipedia/commons/c/c7/Logs.jpg, 0.8)
+background-image: url(Logs.png)
 layout: false
 # Introducción
 .left-column[
