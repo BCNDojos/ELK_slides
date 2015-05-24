@@ -33,6 +33,7 @@ background-image: url(http://upload.wikimedia.org/wikipedia/commons/c/c7/Logs.jp
 ## - Josep Pla ([@joseppla74](https://twitter.com/joseppla74)): Ingeniero de sistemas en [Upptalk](http://upptalk.com/)
 ## - Ignasi Fosch ([@ifosch](https://twitter.com/ifosch)): Ingeniero de sistemas en [Devex](https://www.devex.com/)
 ---
+background-image: url(http://upload.wikimedia.org/wikipedia/commons/c/c7/Logs.jpg)
 layout: false
 # Introducción
 .left-column[
@@ -1023,7 +1024,6 @@ background-size: contain;
 ---
 background-image: url(http://www.troll.me/images/victory-baby/presentation-finished-any-questions.jpg)
 background-size: contain;
-# ¿Preguntas?
 ---
 background-image: url(http://cdn.meme.am/instances/500x/58052239.jpg)
 background-size: contain;
