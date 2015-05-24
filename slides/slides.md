@@ -1027,5 +1027,26 @@ background-size: contain;
 ---
 background-image: url(http://cdn.meme.am/instances/500x/58052239.jpg)
 background-size: contain;
-.center[# Muchas gracias]
+
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
 [http://remarks.sinaapp.com/repo/BCNDojos/ELK_slides/slides/](http://remarks.sinaapp.com/repo/BCNDojos/ELK_slides/slides/#1)
