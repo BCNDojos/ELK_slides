@@ -288,8 +288,9 @@ layout: false
 background-image: url()
 background-size: contain;
 ---
+theme: logo.css
 # Logstash
-<img src="http://logstash.net/images/logstash.png" alt="Logstash logo" style="height: 100px;"/>
+.right[![Logstash Logo](http://logstash.net/images/logstash.png =63x100)]
 .left-column[
 ## ¿Qué es?
 ]
