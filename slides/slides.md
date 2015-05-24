@@ -289,7 +289,7 @@ background-image: url()
 background-size: contain;
 ---
 # Logstash
-.right[![Logstash Logo](http://logstash.net/images/logstash.png =63x100)]
+<img src="http://logstash.net/images/logstash.png" alt="Logstash logo" style="height: 100px;"/>
 .left-column[
 ## ¿Qué es?
 ]
