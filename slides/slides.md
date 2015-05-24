@@ -1,5 +1,6 @@
 title: ELK
 description: Presentación sobre ELK.
+theme: logo.css
 name: inverse
 layout: true
 class: center, top, inverse
@@ -288,7 +289,6 @@ layout: false
 background-image: url()
 background-size: contain;
 ---
-theme: logo.css
 # Logstash
 .right[.logo[![Logstash Logo](http://logstash.net/images/logstash.png)]]
 .left-column[
