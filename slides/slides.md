@@ -1,6 +1,6 @@
 title: ELK
 description: Presentación sobre ELK.
-name: inverse
+name: title
 layout: true
 class: center, top, inverse
 ---
@@ -33,7 +33,6 @@ background-image: url(http://upload.wikimedia.org/wikipedia/commons/c/c7/Logs.jp
 ## - Josep Pla ([@joseppla74](https://twitter.com/joseppla74)): Ingeniero de sistemas en [Upptalk](http://upptalk.com/)
 ## - Ignasi Fosch ([@ifosch](https://twitter.com/ifosch)): Ingeniero de sistemas en [Devex](https://www.devex.com/)
 ---
-background-image: url(Logs.png)
 layout: false
 # Introducción
 .left-column[
