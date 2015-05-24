@@ -290,7 +290,7 @@ background-size: contain;
 ---
 theme: logo.css
 # Logstash
-.right[![Logstash Logo](http://logstash.net/images/logstash.png =63x100)]
+.right[.logo[![Logstash Logo](http://logstash.net/images/logstash.png)]]
 .left-column[
 ## ¿Qué es?
 ]
