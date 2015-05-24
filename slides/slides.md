@@ -288,7 +288,8 @@ layout: false
 background-image: url()
 background-size: contain;
 ---
-# Logstash .right[![Right-aligned image](http://logstash.net/images/logstash.png =63x100)]
+# Logstash
+.right[![Logstash Logo](http://logstash.net/images/logstash.png =63x100)]
 .left-column[
 ## ¿Qué es?
 ]
