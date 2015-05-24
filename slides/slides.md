@@ -1,6 +1,5 @@
 title: ELK
 description: Presentación sobre ELK.
-theme: logo.css
 name: inverse
 layout: true
 class: center, top, inverse
@@ -286,11 +285,10 @@ layout: false
 
 ]
 ---
-background-image: url()
+background-image: url(http://www.beheadingboredom.com/wp-content/uploads/2014/06/lumberjack-problems-hipster.jpg)
 background-size: contain;
 ---
 # Logstash
-.right[.logo[![Logstash Logo](http://logstash.net/images/logstash.png)]]
 .left-column[
 ## ¿Qué es?
 ]
@@ -498,7 +496,7 @@ Algunos de estos componentes pueden estar en la misma maquina, pueden ser un mis
  - Podemos definir una lógica que aplique filtros de salida para que según el tipo de datos o etiquetas que hayamos añadido estos se envíen a distintos destinos y en distintos formatos
 ]
 ---
-background-image: url()
+background-image: url(http://fc01.deviantart.net/fs70/f/2012/127/b/2/data_in_a_haystack_by_ladydata-d4ywpr1.jpg)
 background-size: contain;
 ---
 # ElasticSearch
@@ -749,7 +747,7 @@ background-size: contain;
 
 ]
 ---
-background-image: url(https://www.paylease.com/corp/wp-content/uploads/2014/08/man-drawing-charts-and-graphs-e1416365886485.jpg)
+background-image: url(http://30.media.tumblr.com/tumblr_lj2b4vR9uk1qe91fco1_500.jpg)
 background-size: contain;
 ---
 # Kibana
@@ -782,7 +780,7 @@ background-size: contain;
   - #### Exportación de datos en formato CSV
 ]
 ---
-background-image: url()
+background-image: url(http://memecrunch.com/meme/17FX5/im-just-getting-started/image.jpg?w=500&c=1)
 background-size: contain;
 ---
 # Instalación en [Devex](https://www.devex.com/)
@@ -865,7 +863,7 @@ background-size: contain;
 
 ]
 ---
-background-image: url()
+background-image: url(http://i1.kym-cdn.com/entries/icons/original/000/009/217/1912-so-much-win.jpg)
 background-size: contain;
 ---
 # Instalación en [Upptalk](http://upptalk.com)
@@ -1023,11 +1021,11 @@ background-size: contain;
 ## Control de las recompensas por visualización de anuncios
 ]
 ---
-background-image: url()
+background-image: url(http://www.troll.me/images/victory-baby/presentation-finished-any-questions.jpg)
 background-size: contain;
 # ¿Preguntas?
 ---
-background-image: url()
+background-image: url(http://cdn.meme.am/instances/500x/58052239.jpg)
 background-size: contain;
 # Muchas gracias
 [http://remarks.sinaapp.com/repo/BCNDojos/ELK_slides/slides/] (http://remarks.sinaapp.com/repo/BCNDojos/ELK_slides/slides/#1)
