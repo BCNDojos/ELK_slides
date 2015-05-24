@@ -286,9 +286,9 @@ layout: false
 ]
 ---
 background-image: url()
+background-size: contain;
 ---
-# Logstash
-.right[![Right-aligned image](http://logstash.net/images/logstash.png)]
+# Logstash .right[![Right-aligned image](http://logstash.net/images/logstash.png =63x100)]
 .left-column[
 ## ¿Qué es?
 ]
@@ -497,6 +497,7 @@ Algunos de estos componentes pueden estar en la misma maquina, pueden ser un mis
 ]
 ---
 background-image: url()
+background-size: contain;
 ---
 # ElasticSearch
 .left-column[
@@ -780,6 +781,7 @@ background-size: contain;
 ]
 ---
 background-image: url()
+background-size: contain;
 ---
 # Instalación en [Devex](https://www.devex.com/)
 
@@ -862,6 +864,7 @@ background-image: url()
 ]
 ---
 background-image: url()
+background-size: contain;
 ---
 # Instalación en [Upptalk](http://upptalk.com)
 
@@ -1019,8 +1022,10 @@ background-image: url()
 ]
 ---
 background-image: url()
+background-size: contain;
 # ¿Preguntas?
 ---
 background-image: url()
+background-size: contain;
 # Muchas gracias
 [http://remarks.sinaapp.com/repo/BCNDojos/ELK_slides/slides/] (http://remarks.sinaapp.com/repo/BCNDojos/ELK_slides/slides/#1)
