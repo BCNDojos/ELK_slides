@@ -34,6 +34,7 @@ background-image: url(http://upload.wikimedia.org/wikipedia/commons/c/c7/Logs.jp
 ## - Ignasi Fosch ([@ifosch](https://twitter.com/ifosch)): Ingeniero de sistemas en [Devex](https://www.devex.com/)
 ---
 background-image: url(http://upload.wikimedia.org/wikipedia/commons/c/c7/Logs.jpg)
+background-color:rgba(255,255,255,0.5);
 layout: false
 # Introducción
 .left-column[
