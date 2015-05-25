@@ -380,6 +380,14 @@ background-size: contain;
 ### Arquitectura del sistema Logstash
 - #### Shipper
 	- Es el servicio que corre en cada máquina y se encarga de recoger los logs deseados, etiquetarlos y enviarlos a un "broker" o al servicio central de Logstash
+
+#### Ejemplo de fichero de configuración de un shipper:
+    input {
+        file {
+    	  	type => "postfix"
+    		path => ["/var/log/mail.*"]
+    	}
+	}
 ]
 ---
 # Logstash
