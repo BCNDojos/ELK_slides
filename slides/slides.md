@@ -388,6 +388,21 @@ background-size: contain;
     		path => ["/var/log/mail.*"]
     	}
 	}
+	input {
+		file {
+			type => "auth"
+			path => ["/var/log/auth.*", "/var/log/fail2ban.*"]
+		}
+	}
+	output {
+    	redis {
+    		host => "10.0.0.1"
+    		data_type => "list"
+    		key => "logstash"
+		}
+	}
+
+
 ]
 ---
 # Logstash
