@@ -382,6 +382,7 @@ background-size: contain;
 	- Es el servicio que corre en cada máquina y se encarga de recoger los logs deseados, etiquetarlos y enviarlos a un "broker" o al servicio central de Logstash
 
 Ejemplo de fichero de configuración de un shipper con 2 ficheros de entrada marcados como tipo "auth" y una salida a redis:
+
 	input {
 		file {
 			type => "auth"
