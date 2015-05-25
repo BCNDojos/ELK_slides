@@ -527,6 +527,11 @@ Algunos de estos componentes pueden estar en la misma máquina, pueden ser un mi
   Es la fase en que extraemos, modificamos, añadimos datos
 
   - Se aplican una serie de filtros según una lógica que definimos en el fichero de configuración que nos permiten realizar todas las modificaciones citadas anteriormente
+
+Ejemplo de un filtro GROK que parsea lineas de error de login al puerto ssh:
+
+     AUTH_GROK_FILTER %{TIMESTAMP_ISO8601:timestamp} %{SYSLOGHOST:host} fail2ban(?:\[%{POSINT:pid}\])?: %{LOGLEVEL:loglevel} event:%{WORD:event}\suser:(%{BASE10NUM:user}|%{USER:user})
+	
 ]
 ---
 # Logstash
