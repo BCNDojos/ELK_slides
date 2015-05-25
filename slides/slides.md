@@ -1,6 +1,6 @@
 title: ELK
 description: Presentación sobre ELK.
-name: inverse
+name: title
 layout: true
 class: center, top, inverse
 ---
@@ -285,6 +285,9 @@ layout: false
 
 ]
 ---
+background-image: url(http://www.beheadingboredom.com/wp-content/uploads/2014/06/lumberjack-problems-hipster.jpg)
+background-size: contain;
+---
 # Logstash
 .left-column[
 ## ¿Qué es?
@@ -492,6 +495,9 @@ Algunos de estos componentes pueden estar en la misma maquina, pueden ser un mis
 
  - Podemos definir una lógica que aplique filtros de salida para que según el tipo de datos o etiquetas que hayamos añadido estos se envíen a distintos destinos y en distintos formatos
 ]
+---
+background-image: url(http://fc01.deviantart.net/fs70/f/2012/127/b/2/data_in_a_haystack_by_ladydata-d4ywpr1.jpg)
+background-size: contain;
 ---
 # ElasticSearch
 .left-column[
@@ -741,6 +747,9 @@ Algunos de estos componentes pueden estar en la misma maquina, pueden ser un mis
 
 ]
 ---
+background-image: url(http://30.media.tumblr.com/tumblr_lj2b4vR9uk1qe91fco1_500.jpg)
+background-size: contain;
+---
 # Kibana
 
 .left-column[
@@ -770,6 +779,9 @@ Algunos de estos componentes pueden estar en la misma maquina, pueden ser un mis
 
   - #### Exportación de datos en formato CSV
 ]
+---
+background-image: url(http://memecrunch.com/meme/17FX5/im-just-getting-started/image.jpg?w=500&c=1)
+background-size: contain;
 ---
 # Instalación en [Devex](https://www.devex.com/)
 
@@ -850,6 +862,9 @@ Algunos de estos componentes pueden estar en la misma maquina, pueden ser un mis
 ### Detección de errores
 
 ]
+---
+background-image: url(http://i1.kym-cdn.com/entries/icons/original/000/009/217/1912-so-much-win.jpg)
+background-size: contain;
 ---
 # Instalación en [Upptalk](http://upptalk.com)
 
@@ -1005,3 +1020,38 @@ Algunos de estos componentes pueden estar en la misma maquina, pueden ser un mis
 
 ## Control de las recompensas por visualización de anuncios
 ]
+---
+background-image: url(http://www.troll.me/images/victory-baby/presentation-finished-any-questions.jpg)
+background-size: contain;
+---
+background-image: url(http://cdn.meme.am/instances/500x/58052239.jpg)
+background-size: contain;
+
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+.center[[http://remarks.sinaapp.com/repo/BCNDojos/ELK_slides/slides/](http://remarks.sinaapp.com/repo/BCNDojos/ELK_slides/slides/#1)]
