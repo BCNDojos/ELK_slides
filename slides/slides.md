@@ -440,6 +440,41 @@ Ejemplo de configuración de un shipper con 2 ficheros de entrada marcados como 
 .right-column[
 ### Arquitectura del sistema Logstash
 
+- #### Logstash Central
+
+Ejemplo de configuración de un logstash central:
+
+	input { 
+		redis {
+       		host => "127.0.0.1"
+       		port => "6378"
+    	    type => "redis-input"
+        	data_type => "list"
+        	key => "logstash"
+    	}
+	}
+	filter {
+		if [type]== "auth" {
+        	if [message]=~/fail2ban_login_error/ {
+	           	grok {
+	           		patterns_dir => ["/etc/logstash/patterns"]
+	           		match => [ "message", "%{AUTH_GROK_FILTER}" ]
+	           		add_tag => [ "authorization", "error"]
+	           	}
+	        }
+	   	}
+	}
+]
+---
+# Logstash
+
+.left-column[
+### ¿Qué es?
+## ¿Cómo Funciona?
+]
+.right-column[
+### Arquitectura del sistema Logstash
+
 - #### Shipper
 	- Es el servicio que corre en cada máquina y se encarga de recoger los logs deseados, etiquetarlos y enviarlos a un "broker" o al servicio central de Logstash
 - #### Broker
