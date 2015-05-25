@@ -438,8 +438,6 @@ Ejemplo de configuración de un shipper con 2 ficheros de entrada marcados como 
 ## ¿Cómo Funciona?
 ]
 .right-column[
-### Arquitectura del sistema Logstash
-
 Ejemplo de configuración de un logstash central con una entrada redis, 1 filtro GROK filtrando por tipo y mensaje y una salida a elasticsearch:
 
 	input { 
