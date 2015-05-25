@@ -440,9 +440,7 @@ Ejemplo de configuración de un shipper con 2 ficheros de entrada marcados como 
 .right-column[
 ### Arquitectura del sistema Logstash
 
-- #### Logstash Central
-
-Ejemplo de configuración de un logstash central:
+Ejemplo de configuración de un logstash central con una entrada redis, 1 filtro GROK filtrando por tipo y mensaje y una salida a elasticsearch:
 
 	input { 
 		redis {
@@ -464,6 +462,14 @@ Ejemplo de configuración de un logstash central:
 	        }
 	   	}
 	}
+	output {
+    	easticsearch {
+        	host => "127.0.0.1"
+        	node_name=> "elastic-1"
+        	embedded=> "false"
+        	cluster => "logstash_prod"
+    	}
+    }
 ]
 ---
 # Logstash
