@@ -533,7 +533,7 @@ Ejemplo de un filtro GROK que parsea lineas de error de login al puerto ssh:
      AUTH_GROK_FILTER %{TIMESTAMP_ISO8601:timestamp} 
      %{SYSLOGHOST:host} fail2ban(?:\[%{POSINT:pid}\])?:
      %{LOGLEVEL:loglevel} event:%{WORD:event}\s
-     user:(%{BASE10NUM:user}|%{USER:user})
+     user:(%{BASE10NUM:user}|%{USER:user}) ip:%{IP:ip}
 	
 ]
 ---
