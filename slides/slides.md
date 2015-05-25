@@ -442,32 +442,32 @@ Ejemplo de configuración de un logstash central con una entrada redis, 1 filtro
 
 	input { 
 		redis {
-       		host => "127.0.0.1"
-       		port => "6378"
-    	    type => "redis-input"
-        	data_type => "list"
-        	key => "logstash"
-    	}
+			host => "127.0.0.1"
+			port => "6378"
+			type => "redis-input"
+			data_type => "list"
+			key => "logstash"
+		}
 	}
 	filter {
 		if [type]== "auth" {
-        	if [message]=~/fail2ban_login_error/ {
-	           	grok {
-	           		patterns_dir => ["/etc/logstash/patterns"]
-	           		match => [ "message", "%{AUTH_GROK_FILTER}" ]
-	           		add_tag => [ "authorization", "error"]
-	           	}
-	        }
-	   	}
+			if [message]=~/fail2ban_login_error/ {
+				grok {
+					patterns_dir => ["/etc/logstash/patterns"]
+					match => [ "message", "%{AUTH_GROK_FILTER}" ]
+					add_tag => [ "authorization", "error"]
+				}
+			}
+		}
 	}
 	output {
-    	easticsearch {
-        	host => "127.0.0.1"
-        	node_name=> "elastic-1"
-        	embedded=> "false"
-        	cluster => "logstash_prod"
-    	}
-    }
+		easticsearch {
+			host => "127.0.0.1"
+			node_name=> "elastic-1"
+			embedded=> "false"
+			cluster => "logstash_prod"
+		}
+	}
 ]
 ---
 # Logstash
