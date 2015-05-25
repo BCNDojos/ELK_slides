@@ -379,7 +379,7 @@ background-size: contain;
 .right-column[
 ### Arquitectura del sistema Logstash
 - #### Shipper
-	- Es el servicio que corre en cada maquina y se encarga de recoger los logs deseados, etiquetarlos y enviarlos a un "broker" o al servicio central de Logstash
+	- Es el servicio que corre en cada máquina y se encarga de recoger los logs deseados, etiquetarlos y enviarlos a un "broker" o al servicio central de Logstash
 ]
 ---
 # Logstash
@@ -391,7 +391,7 @@ background-size: contain;
 .right-column[
 ### Arquitectura del sistema Logstash
 - #### Shipper
-	- Es el servicio que corre en cada maquina y se encarga de recoger los logs deseados, etiquetarlos y enviarlos a un "broker" o al servicio central de Logstash
+	- Es el servicio que corre en cada máquina y se encarga de recoger los logs deseados, etiquetarlos y enviarlos a un "broker" o al servicio central de Logstash
 - #### Broker
 	- Si lo tenemos, es el encargado de recoger todos los logs que envían los shippers para que posteriormente el Logstash central los coja para procesarlos
 ]
@@ -406,30 +406,30 @@ background-size: contain;
 ### Arquitectura del sistema Logstash
 
 - #### Shipper
-	- Es el servicio que corre en cada maquina y se encarga de recoger los logs deseados, etiquetarlos y enviarlos a un "broker" o al servicio central de Logstash
-- #### Broker
-	- Si lo tenemos, es el encargado de recoger todos los logs que envían los shippers para que posteriormente el Logstash central los coja para procesarlos
-- #### Logstash Central
-	- Es el encargado de recoger todos los logs del broker o los agentes de logstash y aplicarles una lógica definida por el usuario para modificarlos, extraerlos y enviar el resultado a una serie de salidas (Elasticsearch, Nagios, Mail, etc...)
-]
----
-# Logstash
-
-.left-column[
-### ¿Qué es?
-## ¿Cómo Funciona?
-]
-.right-column[
-### Arquitectura del sistema Logstash
-
-- #### Shipper
-	- Es el servicio que corre en cada maquina y se encarga de recoger los logs deseados, etiquetarlos y enviarlos a un "broker" o al servicio central de Logstash
+	- Es el servicio que corre en cada máquina y se encarga de recoger los logs deseados, etiquetarlos y enviarlos a un "broker" o al servicio central de Logstash
 - #### Broker
 	- Si lo tenemos, es el encargado de recoger todos los logs que envían los shippers para que posteriormente el Logstash central los coja para procesarlos
 - #### Logstash Central
 	- Es el encargado de recoger todos los logs del broker o los agentes de logstash y aplicarles una lógica definida por el usuario para modificarlos, extraerlos y enviar el resultado a una serie de salidas (Elasticsearch, Nagios, Mail, etc...)
+]
+---
+# Logstash
 
-Algunos de estos componentes pueden estar en la misma maquina, pueden ser un mismo proceso realizando varios de los roles e incluso alguno puede no existir en nuestra instalación.
+.left-column[
+### ¿Qué es?
+## ¿Cómo Funciona?
+]
+.right-column[
+### Arquitectura del sistema Logstash
+
+- #### Shipper
+	- Es el servicio que corre en cada máquina y se encarga de recoger los logs deseados, etiquetarlos y enviarlos a un "broker" o al servicio central de Logstash
+- #### Broker
+	- Si lo tenemos, es el encargado de recoger todos los logs que envían los shippers para que posteriormente el Logstash central los coja para procesarlos
+- #### Logstash Central
+	- Es el encargado de recoger todos los logs del broker o los agentes de logstash y aplicarles una lógica definida por el usuario para modificarlos, extraerlos y enviar el resultado a una serie de salidas (Elasticsearch, Nagios, Mail, etc...)
+
+Algunos de estos componentes pueden estar en la misma máquina, pueden ser un mismo proceso realizando varios de los roles e incluso alguno puede no existir en nuestra instalación.
 ]
 ---
 # Logstash
@@ -449,7 +449,7 @@ Algunos de estos componentes pueden estar en la misma maquina, pueden ser un mis
 
   - Se definen una serie de entradas (inputs) en el fichero de configuración
 
-  - Se aplican una serie de etiquetas a fin de que posteriormente sea mas sencillo aplicar la lógica y filtros deseados
+  - Se aplican una serie de etiquetas a fin de que posteriormente sea más sencillo aplicar la lógica y filtros deseados
 ]
 ---
 # Logstash
