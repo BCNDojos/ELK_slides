@@ -380,6 +380,24 @@ background-size: contain;
 ### Arquitectura del sistema Logstash
 - #### Shipper
 	- Es el servicio que corre en cada máquina y se encarga de recoger los logs deseados, etiquetarlos y enviarlos a un "broker" o al servicio central de Logstash
+
+Ejemplo de configuración de un shipper con 2 ficheros de entrada marcados como tipo "auth" y una salida a redis:
+
+	input {
+		file {
+			type => "auth"
+			path => ["/var/log/auth.*", "/var/log/fail2ban.*"]
+		}
+	}
+	output {
+    	redis {
+    		host => "10.0.0.1"
+    		data_type => "list"
+    		key => "logstash"
+		}
+	}
+
+
 ]
 ---
 # Logstash
@@ -411,6 +429,45 @@ background-size: contain;
 	- Si lo tenemos, es el encargado de recoger todos los logs que envían los shippers para que posteriormente el Logstash central los coja para procesarlos
 - #### Logstash Central
 	- Es el encargado de recoger todos los logs del broker o los agentes de logstash y aplicarles una lógica definida por el usuario para modificarlos, extraerlos y enviar el resultado a una serie de salidas (Elasticsearch, Nagios, Mail, etc...)
+]
+---
+# Logstash
+
+.left-column[
+### ¿Qué es?
+## ¿Cómo Funciona?
+]
+.right-column[
+Ejemplo de configuración de un logstash central con una entrada redis, 1 filtro GROK filtrando por tipo y mensaje y una salida a elasticsearch:
+
+	input { 
+		redis {
+			host => "127.0.0.1"
+			port => "6378"
+			type => "redis-input"
+			data_type => "list"
+			key => "logstash"
+		}
+	}
+	filter {
+		if [type]== "auth" {
+			if [message]=~/fail2ban_login_error/ {
+				grok {
+					patterns_dir => ["/etc/logstash/patterns"]
+					match => [ "message", "%{AUTH_GROK_FILTER}" ]
+					add_tag => [ "authorization", "error"]
+				}
+			}
+		}
+	}
+	output {
+		easticsearch {
+			host => "127.0.0.1"
+			node_name=> "elastic-1"
+			embedded=> "false"
+			cluster => "logstash_prod"
+		}
+	}
 ]
 ---
 # Logstash
@@ -470,6 +527,14 @@ Algunos de estos componentes pueden estar en la misma máquina, pueden ser un mi
   Es la fase en que extraemos, modificamos, añadimos datos
 
   - Se aplican una serie de filtros según una lógica que definimos en el fichero de configuración que nos permiten realizar todas las modificaciones citadas anteriormente
+
+Ejemplo de un filtro GROK que parsea lineas de error de login al puerto ssh:
+
+     AUTH_GROK_FILTER %{TIMESTAMP_ISO8601:timestamp} 
+     %{SYSLOGHOST:host} fail2ban(?:\[%{POSINT:pid}\])?:
+     %{LOGLEVEL:loglevel} event:%{WORD:event}\s
+     user:%{USER:user} ip:%{IP:ip}
+	
 ]
 ---
 # Logstash
